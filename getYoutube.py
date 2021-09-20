@@ -266,12 +266,12 @@ def getClash(nodes):
     # nodes = list(nodes)
     info = setNodes(nodes) +"\n" + setPG(nodes)
     print(info)
-    with open("/Users/joey/.config/clash/buliang.yaml", 'w') as f:   
+    with open("./clash/clash.yaml", 'w') as f:   
         f.write(info)
 
     with open("./clash/rule.yaml", "r") as f:
         rules = f.read()
-    with open("/Users/joey/.config/clash/buliang.yaml", 'a') as f:
+    with open("./clash/clash.yaml", 'a') as f:
         f.write(rules)
 
 def get_QR_doe():
