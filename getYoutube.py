@@ -74,7 +74,6 @@ def get_ewm(img_adds):
             if(len(ssVemssList) >= n):
                 getClash(ssVemssList)
                 ssVemssList.clear()
-                os.remove('./result.txt')
                 driver.close(); #closes the browser
                 exit(0)
 
