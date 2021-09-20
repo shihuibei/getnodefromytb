@@ -278,9 +278,9 @@ def get_QR_doe():
     except Exception:
         print("没有元素")
     png = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
-    driver.get_screenshot_as_file("%s/png/%s.png" % ('/tmp', png))
+    driver.get_screenshot_as_file(r"%s%s.png" % ('/tmp/', png))
 
-    get_ewm('/tmp' + "/png/" + png + ".png")
+    get_ewm('/tmp/' + png + ".png")
     t = threading.Timer(30, get_QR_doe)
     t.start()
 
