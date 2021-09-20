@@ -22,7 +22,7 @@ if(needRun):
         options = Options()
         options.add_argument("--mute-audio")
         options.add_argument('headless')
-        options.add_argument("--proxy-server=http://" + proxy)
+        # options.add_argument("--proxy-server=http://" + proxy)
         path = "./chromedriver"
         driver = webdriver.Chrome(path, options=options)
         driver.get("https://www.youtube.com/watch?v=Lc21evKC1jg")
