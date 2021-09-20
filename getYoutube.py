@@ -17,6 +17,7 @@ import json
 ssVemssList = set()
 n = 15
 needRun = True;
+youtubeDir = os.getcwd();
 if(needRun):
     try:
         proxy = "127.0.0.1:7890" # IP:PORT or HOST:PORT
@@ -24,7 +25,7 @@ if(needRun):
         options.add_argument("--mute-audio")
         options.add_argument('headless')
         # options.add_argument("--proxy-server=http://" + proxy)
-        # path = "./chromedriver"
+        path = "./chromedriver"
         path = "/usr/local/bin/chromedriver"
         driver = webdriver.Chrome(path, options=options)
         driver.get("https://www.youtube.com/watch?v=Lc21evKC1jg")
@@ -261,19 +262,19 @@ def setNodes(nodes):
     return proxies[:-1]   
 
 def getClash(nodes):
-    with open("./clash/general.yaml", "r") as f:
+    with open(youtubeDir + "/clash/general.yaml", "r") as f:
         gener = f.read()
-    with open("./clash/clash.yaml", "w") as f:
+    with open(youtubeDir + "/clash/clash.yaml", "w") as f:
         f.writelines(gener)
     # nodes = list(nodes)
     info = setNodes(nodes) +"\n" + setPG(nodes)
     print(info)
-    with open("./clash/clash.yaml", 'w') as f:   
+    with open(youtubeDir + "/clash/clash.yaml", 'w') as f:   
         f.write(info)
 
-    with open("./clash/rule.yaml", "r") as f:
+    with open( youtubeDir + "/clash/rule.yaml", "r") as f:
         rules = f.read()
-    with open("./clash/clash.yaml", 'a') as f:
+    with open(youtubeDir + "/clash/clash.yaml", 'a') as f:
         f.write(rules)
 
 def get_QR_doe():
@@ -285,20 +286,12 @@ def get_QR_doe():
     except Exception:
         print("没有元素")
     png = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
-    driver.get_screenshot_as_file(r"./png/%s.png" % png)
+    driver.get_screenshot_as_file(r"$s/png/%s.png" % (youtubeDir,png))
 
-    get_ewm("./png/" + png + ".png")
+    get_ewm(youtubeDir + "/png/" + png + ".png")
     t = threading.Timer(30, get_QR_doe)
     t.start()
 
-def readFromtxt():
-    lines = tuple(open("./result.txt", 'r'))
-    node = set()
-    for i  in lines:
-        i = i.replace('\n', '')
-        if((i.startswith("ss") or i.startswith("vmess"))and not i.startswith("ssr")):
-            node.add(i)
-    getClash(node)
 
 if __name__ == '__main__':
     get_QR_doe()
