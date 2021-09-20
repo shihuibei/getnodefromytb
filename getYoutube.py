@@ -47,12 +47,8 @@ if(needRun):
 
 
 def txt2(name, target):
-    b = os.getcwd()
 
-    if not os.path.exists(b):
-        os.makedirs(b)
-
-    txtFile = open(name + '.txt', 'a')
+    txtFile = open('tmp/' +name + '.txt', 'a')
     if isTxt(name, target):
         txtFile.write(target)
     txtFile.close()
@@ -73,11 +69,7 @@ def isTxt(name, text):
     return result
 
 def get_ewm(img_adds):
-    if os.path.isfile(img_adds):
-        img = Image.open(img_adds)
-    else:
-        rq_img = requests.get(img_adds).content
-        img = Image.open(BytesIO(rq_img))
+    img = Image.open(img_adds)
 
     txt_list = pyzbar.decode(img)
 
@@ -286,9 +278,9 @@ def get_QR_doe():
     except Exception:
         print("没有元素")
     png = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
-    driver.get_screenshot_as_file("%s/png/%s.png" % (youtubeDir, png))
+    driver.get_screenshot_as_file("%s/png/%s.png" % ('/tmp', png))
 
-    get_ewm(youtubeDir + "/png/" + png + ".png")
+    get_ewm('/tmp' + "/png/" + png + ".png")
     t = threading.Timer(30, get_QR_doe)
     t.start()
 
