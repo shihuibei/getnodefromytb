@@ -78,9 +78,6 @@ def get_ewm(img_adds):
                 driver.close(); #closes the browser
                 exit(0)
 
-
-    os.remove(img_adds)
-
 def parseLink(link, idx):
     print(link)
     if(link.startswith("ss")):
