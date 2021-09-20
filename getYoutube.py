@@ -46,14 +46,6 @@ if(needRun):
         print("Loading took too much time!")
 
 
-def txt2(name, target):
-
-    txtFile = open('tmp/' +name + '.txt', 'a')
-    if isTxt(name, target):
-        txtFile.write(target)
-    txtFile.close()
-
-
 def isTxt(name, text):
     txtFile = open(name + '.txt', 'a+')
     result = True
@@ -75,7 +67,6 @@ def get_ewm(img_adds):
 
     for txt in txt_list:
         barcodeData = txt.data.decode("utf-8")
-        txt2('result', barcodeData + "\n")
         barcodeData = str(barcodeData)
         if(((barcodeData.startswith("ss")) or (barcodeData.startswith("vmess")))
         and not (barcodeData.startswith("ssr"))):
