@@ -1,4 +1,5 @@
 #! /usr/bin/env python3
+from requests.api import head
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
@@ -73,6 +74,7 @@ def get_ewm(img_adds):
             ssVemssList.add(barcodeData)
             if(len(ssVemssList) >= n):
                 getClash(ssVemssList)
+                push2gitlab()
                 ssVemssList.clear()
                 driver.close(); #closes the browser
                 exit(0)
@@ -248,7 +250,7 @@ def getClash(nodes):
     # nodes = list(nodes)
     info = setNodes(nodes) +"\n" + setPG(nodes)
     print(info)
-    with open(youtubeDir + "/clash/clash.yaml", 'w') as f:   
+    with open(youtubeDir + "/clash/clash.yaml", 'a') as f:   
         f.write(info)
 
     with open( youtubeDir + "/clash/rule.yaml", "r") as f:
@@ -271,8 +273,35 @@ def get_QR_doe():
     t = threading.Timer(30, get_QR_doe)
     t.start()
 
+def push2gitlab():
+    with open( youtubeDir + "/clash/clash.yaml", "r") as f:
+        content = f.read()
+    url = 'https://gitlab.com/api/v4/projects/{}/repository/files/clash.yaml'.format(29803805)
+    # delete first
+    data = {
+        "branch": "main",
+        "author_email": "author@example.com",
+        "author_name": "Firstname Lastname",
+        "commit_message": "delete file"
+    }
+
+    header = {
+        'content-type': 'application/json',
+        'private-token': 'Z8gNtAxjsf4a6jwdfAZ4',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.67'
+    }
+    res1 = requests.delete(url=url,headers=header, json=data).content
+    print("删除结果", res1)
+
+    data['content'] = content
+    data['commit_message'] = 'update clash'
+
+    res = requests.post(url=url, headers=header, json=data).content
+    print("推送结果", res)
+
 
 if __name__ == '__main__':
     get_QR_doe()
+
 
 
