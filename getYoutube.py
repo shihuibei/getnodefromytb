@@ -74,7 +74,10 @@ def get_ewm(img_adds):
             ssVemssList.add(barcodeData)
             if(len(ssVemssList) >= n):
                 getClash(ssVemssList)
+                s = '\n'.join(ssVemssList)
+                contents = base64.b64encode(s.encode()).decode()
                 push2gitlab()
+                push2gitlabV2ray(contents)
                 ssVemssList.clear()
                 driver.close(); #closes the browser
                 exit(0)
@@ -299,6 +302,30 @@ def push2gitlab():
     res = requests.post(url=url, headers=header, json=data).content
     print("推送结果", res)
 
+
+def push2gitlabV2ray(content):
+    url = 'https://gitlab.com/api/v4/projects/{}/repository/files/v2ray.txt'.format(29803805)
+    # delete first
+    data = {
+        "branch": "main",
+        "author_email": "author@example.com",
+        "author_name": "Firstname Lastname",
+        "commit_message": "delete v2ray file"
+    }
+
+    header = {
+        'content-type': 'application/json',
+        'private-token': 'Z8gNtAxjsf4a6jwdfAZ4',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.67'
+    }
+    res1 = requests.delete(url=url,headers=header, json=data).content
+    print("删除v2ray结果", res1)
+
+    data['content'] = content
+    data['commit_message'] = 'update v2ray'
+
+    res = requests.post(url=url, headers=header, json=data).content
+    print("推送v2ray结果", res)
 
 if __name__ == '__main__':
     get_QR_doe()
