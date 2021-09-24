@@ -5,21 +5,21 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 27.131.164.100, port: 45746, cipher: aes-256-gcm, type: ss, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: 1@1, server: 27.131.164.100, port: 44945, cipher: aes-256-gcm, type: ss, password: F5bKkb9ggkLx4JbQrbLn7LjZ}
-  - {name: 2@2, server: 188.95.55.114, port: 47121, cipher: aes-256-gcm, type: ss, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 3@3, server: 27.131.164.100, port: 38033, cipher: aes-256-gcm, type: ss, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: 4@4, server: 193.29.106.29, port: 39772, cipher: aes-256-gcm, type: ss, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 5@5, server: 66.115.154.131, port: 50168, cipher: aes-256-gcm, type: ss, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 6@6, server: 66.115.177.156, port: 49339, cipher: aes-256-gcm, type: ss, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 7@7, server: 194.37.98.36, port: 50168, cipher: aes-256-gcm, type: ss, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 8@8, server: 104.244.211.141, port: 47121, cipher: aes-256-gcm, type: ss, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 9@9, server: 193.108.118.34, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 10@10, server: 66.115.177.141, port: 40093, cipher: aes-256-gcm, type: ss, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 11@11, server: 5.39.70.138, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 12@12, server: 66.115.177.143, port: 33992, cipher: aes-256-gcm, type: ss, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 13@13, server: 66.115.154.131, port: 40093, cipher: aes-256-gcm, type: ss, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 14@14, server: 142.0.136.26, port: 443, type: vmess, uuid: 99a32d2a-05a6-48e3-aaaf-76ee979f82b2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.41439204.xyz}}
+  - {name: 0@0, server: 212.102.44.86, port: 31944, cipher: aes-256-gcm, type: ss, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 1@1, server: 27.131.164.100, port: 43893, cipher: aes-256-gcm, type: ss, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 2@2, server: 27.131.164.94, port: 50024, cipher: aes-256-gcm, type: ss, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 3@3, server: 188.95.55.120, port: 49339, cipher: aes-256-gcm, type: ss, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 4@4, server: 45.79.122.28, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 5@5, server: 27.131.164.94, port: 47553, cipher: aes-256-gcm, type: ss, password: t2JnnFqjDMmzWurseJPgBsYY}
+  - {name: 6@6, server: 27.131.164.100, port: 46412, cipher: aes-256-gcm, type: ss, password: GEqk9WGyybeyXW97YEdanDYs}
+  - {name: 7@7, server: 27.131.164.100, port: 45746, cipher: aes-256-gcm, type: ss, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 8@8, server: 66.115.177.156, port: 50024, cipher: aes-256-gcm, type: ss, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 9@9, server: groupc.chbjpw.mobi, port: 20005, uuid: 88c69d99-d00d-46c5-bd2e-fc4af2e59043, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: groupc.chbjpw.mobi}}
+  - {name: 10@10, server: 27.131.164.94, port: 48938, cipher: aes-256-gcm, type: ss, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 11@11, server: 27.131.164.94, port: 49202, cipher: aes-256-gcm, type: ss, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: 12@12, server: 173.82.150.26, port: 443, type: vmess, uuid: 1a116d02-5fca-47fa-a2a1-6e8d0f2f71cc, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.75287890.xyz}}
+  - {name: 13@13, server: 188.95.55.120, port: 33998, cipher: aes-256-gcm, type: ss, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 14@14, server: 152.89.160.213, port: 38742, cipher: aes-256-gcm, type: ss, password: DKXfWwc4ebscpXTKpbt85rSH}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
