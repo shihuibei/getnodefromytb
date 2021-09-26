@@ -279,7 +279,7 @@ def get_QR_doe():
 def push2gitlab():
     with open( youtubeDir + "/clash/clash.yaml", "r") as f:
         content = f.read()
-    url = 'https://gitlab.com/api/v4/projects/{}/repository/files/clash.yaml'.format(29803805)
+    url = 'https://gitlab.com/api/v4/projects/{}/repository/files/clash.yaml'.format(29907677)
     # delete first
     data = {
         "branch": "main",
@@ -290,7 +290,7 @@ def push2gitlab():
 
     header = {
         'content-type': 'application/json',
-        'private-token': 'Z8gNtAxjsf4a6jwdfAZ4',
+        'private-token': 'eLcVYGdgd55VjQQ8UFb7',
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.67'
     }
     res1 = requests.delete(url=url,headers=header, json=data).content
