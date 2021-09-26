@@ -304,7 +304,7 @@ def push2gitlab():
 
 
 def push2gitlabV2ray(content):
-    url = 'https://gitlab.com/api/v4/projects/{}/repository/files/v2ray.txt'.format(29803805)
+    url = 'https://gitlab.com/api/v4/projects/{}/repository/files/v2ray.txt'.format(29907677)
     # delete first
     data = {
         "branch": "main",
@@ -315,7 +315,7 @@ def push2gitlabV2ray(content):
 
     header = {
         'content-type': 'application/json',
-        'private-token': 'Z8gNtAxjsf4a6jwdfAZ4',
+        'private-token': 'eLcVYGdgd55VjQQ8UFb7',
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.67'
     }
     res1 = requests.delete(url=url,headers=header, json=data).content
