@@ -5,21 +5,21 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 82.102.26.93, port: 33148, cipher: aes-256-gcm, type: ss, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: 1@1, server: 192.74.254.112, port: 58719, uuid: ae1048eb-a962-48f6-b15f-013d83d0b6c7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 192.74.254.112}}
-  - {name: 2@2, server: 72.140.224.195, port: 810, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
-  - {name: 3@3, server: 66.115.177.141, port: 47121, cipher: aes-256-gcm, type: ss, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: 4@4, server: 27.131.164.94, port: 46726, cipher: aes-256-gcm, type: ss, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
-  - {name: 5@5, server: 86.106.137.147, port: 31572, cipher: aes-256-gcm, type: ss, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 6@6, server: 27.131.164.100, port: 35294, cipher: aes-256-gcm, type: ss, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 7@7, server: 45.79.122.28, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 8@8, server: 84.17.53.214, port: 39772, cipher: aes-256-gcm, type: ss, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 9@9, server: 27.131.164.94, port: 50024, cipher: aes-256-gcm, type: ss, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: 10@10, server: 66.115.177.143, port: 31944, cipher: aes-256-gcm, type: ss, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: 11@11, server: nn-ssr24.feiclouddd.me, port: 443, type: vmess, uuid: 94d3ddba-3c75-4ddd-84c5-b859a30b1fb9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dsafasdf, ws-headers: {Host: nn-ssr24.feiclouddd.me}}
-  - {name: 12@12, server: 84.17.58.190, port: 40093, cipher: aes-256-gcm, type: ss, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 13@13, server: 66.115.154.131, port: 48794, cipher: aes-256-gcm, type: ss, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: 14@14, server: 212.102.44.86, port: 50024, cipher: aes-256-gcm, type: ss, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 0@0, server: 194.39.127.240, port: 31764, cipher: aes-256-gcm, type: ss, password: YgusH2MWA8PWc3p2VDsR7AVv}
+  - {name: 1@1, server: 51.159.30.61, port: 808, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
+  - {name: 2@2, server: 163.172.110.119, port: 810, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
+  - {name: 3@3, server: 66.115.154.131, port: 38620, cipher: aes-256-gcm, type: ss, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 4@4, server: 212.102.44.86, port: 38742, cipher: aes-256-gcm, type: ss, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 5@5, server: 144.48.39.131, port: 40093, cipher: aes-256-gcm, type: ss, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 6@6, server: 193.118.60.167, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 7@7, server: 66.115.177.143, port: 31572, cipher: aes-256-gcm, type: ss, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 8@8, server: 84.17.53.227, port: 31572, cipher: aes-256-gcm, type: ss, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 9@9, server: 84.17.53.227, port: 50024, cipher: aes-256-gcm, type: ss, password: b2jDPHUQxCNa2KmGHZjy7C4B}
+  - {name: 10@10, server: 134.195.196.79, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 11@11, server: 65.52.170.120, port: 80, type: vmess, uuid: f371f062-e1a3-4366-b9d2-948acd2a647f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /hg2, ws-headers: {Host: 65.52.170.120}}
+  - {name: 12@12, server: 138.199.42.151, port: 33992, cipher: aes-256-gcm, type: ss, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 13@13, server: 5.253.207.51, port: 33992, cipher: aes-256-gcm, type: ss, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 14@14, server: 66.115.177.156, port: 49126, cipher: aes-256-gcm, type: ss, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
