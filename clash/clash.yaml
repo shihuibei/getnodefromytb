@@ -5,21 +5,21 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 193.108.118.34, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 1@1, server: 193.108.118.2, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 2@2, server: 96.43.91.59, port: 443, type: vmess, uuid: 3bfb43e2-7dfe-4757-86ee-1ce9fb9fd13a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: 96.43.91.59}}
-  - {name: 3@3, server: 104.18.135.208, port: 443, type: vmess, uuid: 4f672ab6-25e3-49e8-951a-d87b1fa75467, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ce04/, ws-headers: {Host: vir.laoban666.xyz}}
-  - {name: 4@4, server: 188.95.55.120, port: 49653, cipher: aes-256-gcm, type: ss, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 5@5, server: 66.115.177.156, port: 37588, cipher: aes-256-gcm, type: ss, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 6@6, server: 61.14.210.232, port: 42185, cipher: aes-256-gcm, type: ss, password: FaTG4zALZru72gxjgSHQ7Jdh}
-  - {name: 7@7, server: 66.115.177.156, port: 48794, cipher: aes-256-gcm, type: ss, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: 8@8, server: 118.107.244.110, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 9@9, server: 104.160.178.220, port: 443, type: vmess, uuid: 4090dca2-8b93-4b4b-90f3-10f627ffce07, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.57844236.xyz}}
-  - {name: 10@10, server: 134.195.196.163, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 11@11, server: 185.166.84.51, port: 47861, cipher: aes-256-gcm, type: ss, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: 12@12, server: zoomlogin.hostmeetingnow.tk, port: 8880, type: vmess, uuid: 8cf979a4-7d96-4915-abf9-167f295b3fa7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /45ufd6, ws-headers: {Host: zoomlogin.hostmeetingnow.tk}}
-  - {name: 13@13, server: 79.110.54.133, port: 31764, cipher: aes-256-gcm, type: ss, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 14@14, server: 61.14.210.242, port: 32558, cipher: aes-256-gcm, type: ss, password: gJYzm3TLbdL495ryQptaJXQk}
+  - {name: 0@0, server: 66.115.177.156, port: 46726, cipher: aes-256-gcm, type: ss, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: 1@1, server: 66.115.177.143, port: 33992, cipher: aes-256-gcm, type: ss, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 2@2, server: 185.166.84.81, port: 31572, cipher: aes-256-gcm, type: ss, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 3@3, server: 188.95.55.114, port: 49653, cipher: aes-256-gcm, type: ss, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: 4@4, server: 185.166.84.51, port: 34687, cipher: aes-256-gcm, type: ss, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 5@5, server: 66.115.177.156, port: 34687, cipher: aes-256-gcm, type: ss, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 6@6, server: 185.166.84.51, port: 48970, cipher: aes-256-gcm, type: ss, password: ZKEsXkFbUZ2z667YA8A7cEDP}
+  - {name: 7@7, server: c1s4.jamjams.net, port: 19970, uuid: 6213d0c0-432f-445c-8a47-f58b9152b212, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: c1s4.jamjams.net}}
+  - {name: 8@8, server: 61.14.210.232, port: 38742, cipher: aes-256-gcm, type: ss, password: DKXfWwc4ebscpXTKpbt85rSH}
+  - {name: 9@9, server: 91.90.123.155, port: 31572, cipher: aes-256-gcm, type: ss, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 10@10, server: 66.115.177.156, port: 47861, cipher: aes-256-gcm, type: ss, password: LJcChRsGQRhywrtXUU55TLTu}
+  - {name: 11@11, server: 66.115.177.143, port: 41676, cipher: aes-256-gcm, type: ss, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 12@12, server: 188.95.55.114, port: 46642, cipher: aes-256-gcm, type: ss, password: gYL83DQWXuDbxmZAVVtUTXaK}
+  - {name: 13@13, server: 217.138.201.93, port: 49202, cipher: aes-256-gcm, type: ss, password: btzEYXKZxnR7g6H2vFTQK5TD}
+  - {name: 14@14, server: 79.110.54.117, port: 31944, cipher: aes-256-gcm, type: ss, password: aYNeKDMzYQYw4KbUbJA8Wszq}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
