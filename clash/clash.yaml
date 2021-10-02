@@ -5,21 +5,21 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 193.118.60.175, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 1@1, server: 38.68.135.19, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 2@2, server: 66.115.177.156, port: 49126, cipher: aes-256-gcm, type: ss, password: wrCaGtrUbzeRqQLdc8Kmk3Nd}
-  - {name: 3@3, server: 66.115.177.141, port: 42185, cipher: aes-256-gcm, type: ss, password: FaTG4zALZru72gxjgSHQ7Jdh}
-  - {name: 4@4, server: 185.108.105.82, port: 41738, cipher: aes-256-gcm, type: ss, password: X6yMGXnfUsuKTvEDYZSLPk4d}
-  - {name: 5@5, server: 27.131.164.100, port: 45746, cipher: aes-256-gcm, type: ss, password: wEsFcHCvbL4eJkL4DZQa7RgR}
-  - {name: 6@6, server: 82.102.26.93, port: 49653, cipher: aes-256-gcm, type: ss, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 7@7, server: 194.39.127.191, port: 39772, cipher: aes-256-gcm, type: ss, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 8@8, server: 118.107.244.113, port: 3389, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
-  - {name: 9@9, server: 172.107.233.234, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 10@10, server: www.17080100.xyz, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.17080100.xyz}}
-  - {name: 11@11, server: 185.153.151.60, port: 42304, cipher: aes-256-gcm, type: ss, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: 12@12, server: 27.131.164.94, port: 38033, cipher: aes-256-gcm, type: ss, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: 13@13, server: 185.108.105.82, port: 40282, cipher: aes-256-gcm, type: ss, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: 14@14, server: 27.131.164.94, port: 44539, cipher: aes-256-gcm, type: ss, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: 0@0, server: 107.167.18.60, port: 443, type: vmess, uuid: 9838c1b4-c3fd-49b5-8a59-2ff05385f17c, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.76846576.xyz}}
+  - {name: 1@1, server: 66.115.177.141, port: 48794, cipher: aes-256-gcm, type: ss, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 2@2, server: 66.115.177.141, port: 31572, cipher: aes-256-gcm, type: ss, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 3@3, server: 66.115.177.141, port: 40093, cipher: aes-256-gcm, type: ss, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 4@4, server: 193.118.60.167, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 5@5, server: 134.195.196.110, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 6@6, server: 142.4.123.249, port: 38396, uuid: 0dcea9f2-10ac-11ec-a0bc-00163cf00cd9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 142.4.123.249}}
+  - {name: 7@7, server: 66.115.177.156, port: 49653, cipher: aes-256-gcm, type: ss, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: 8@8, server: 172.99.190.153, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 9@9, server: 82.102.26.93, port: 49653, cipher: aes-256-gcm, type: ss, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: 10@10, server: 66.115.177.156, port: 45329, cipher: aes-256-gcm, type: ss, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
+  - {name: 11@11, server: 61.14.210.232, port: 38620, cipher: aes-256-gcm, type: ss, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 12@12, server: 193.118.60.182, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 13@13, server: 134.195.196.133, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 14@14, server: v8.ssrsub.com, port: 158, type: vmess, uuid: 683ec608-5af9-4f91-bd5b-ce493307fe56, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
