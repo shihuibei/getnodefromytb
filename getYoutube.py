@@ -29,7 +29,7 @@ if(needRun):
         path = "./chromedriver"
         path = "/usr/local/bin/chromedriver"
         driver = webdriver.Chrome(path, options=options)
-        driver.get("https://www.youtube.com/watch?v=Lc21evKC1jg")
+        driver.get("https://www.youtube.com/watch?v=a_8_CRE_RhU")
 
         timeout = 10 # seconds
         element = WebDriverWait(driver, timeout).until(lambda x: x.find_element_by_id("logo"))
