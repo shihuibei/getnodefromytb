@@ -135,8 +135,7 @@ def parseLink(link, idx):
         nodedict['name'] = str(idx) + "@" + str(idx)
         nodedict['server'] = dd['add']
         nodedict['port'] = dd['port']
-        if(dd['net'] == 'ws'):
-            nodedict['type'] = 'vmess'   
+        nodedict['type'] = 'vmess'   
         nodedict['uuid'] = dd['id']
         nodedict['alterId'] = 64
         nodedict['cipher'] = 'auto'
