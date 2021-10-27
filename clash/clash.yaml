@@ -5,21 +5,21 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 134.195.196.154, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 1@1, server: 198.57.27.247, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 2@2, server: 66.115.177.143, port: 50168, cipher: aes-256-gcm, type: ss, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 3@3, server: 172.99.190.149, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 4@4, server: 134.195.196.133, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 0@0, server: 138.199.16.152, port: 34687, cipher: aes-256-gcm, type: ss, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 1@1, server: 134.195.196.81, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 2@2, server: 172.107.233.234, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 3@3, server: 138.199.16.152, port: 49653, cipher: aes-256-gcm, type: ss, password: Y9GcTPemHMKEkrfGQPJqFDNr}
+  - {name: 4@4, server: 172.105.59.32, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
   - {name: 5@5, server: 172.105.59.32, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 6@6, server: 38.39.192.74, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 7@7, server: 201.fbplay.net, port: 10026, cipher: aes-256-gcm, type: ss, password: 4c59b800}
-  - {name: 8@8, server: 172.99.190.139, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 9@9, server: 150.230.62.227, port: 443, type: vmess, uuid: 6a5b2dee-6e88-46db-9275-d8c6e042c3db, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 150.230.62.227}}
-  - {name: 10@10, server: 198.57.27.218, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 11@11, server: 134.195.196.154, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 12@12, server: kr2.futi.online, port: 8443, type: vmess, uuid: 6a5b2dee-6e88-46db-9275-d8c6e042c3db, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: kr2.futi.online}}
-  - {name: 13@13, server: 121.134.16.10, port: 10100, cipher: aes-256-gcm, type: ss, password: a78172b3}
-  - {name: 14@14, server: 1.transit.t.qjnodeip.xyz, port: 33779, type: vmess, uuid: 615505e8-e63c-3bad-b3e7-d5e6cf99387e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /HkqibHk02b, ws-headers: {Host: 1.transit.t.qjnodeip.xyz}}
+  - {name: 6@6, server: 38.39.192.74, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 7@7, server: 198.57.27.241, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 8@8, server: 64.44.42.56, port: 34815, cipher: aes-256-gcm, type: ss, password: LkFAzkzXkSCRYa2CsRdL8cG}
+  - {name: 9@9, server: 198.57.27.218, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 10@10, server: 134.195.196.154, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 11@11, server: 1.transit.t.qjnodeip.xyz, port: 27435, type: vmess, uuid: 615505e8-e63c-3bad-b3e7-d5e6cf99387e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /JP03W, ws-headers: {Host: 1.transit.t.qjnodeip.xyz}}
+  - {name: 12@12, server: 198.57.27.241, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 13@13, server: 64.44.42.60, port: 47027, cipher: aes-256-gcm, type: ss, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 14@14, server: 193.118.60.175, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
