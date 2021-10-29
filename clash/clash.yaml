@@ -5,224 +5,224 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
- - {name: 0@0, server: 167.88.63.99, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
- - {name: 1@1, server: 1.transit.t.qjnodeip.xyz, port: 42007, type: vmess, uuid: 615505e8-e63c-3bad-b3e7-d5e6cf99387e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /HGz2Z, ws-headers: {Host: 1.transit.t.qjnodeip.xyz}}
- - {name: 2@2, server: 172.99.190.153, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
- - {name: 3@3, server: 38.107.226.146, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
- - {name: 4@4, server: 167.88.63.99, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
- - {name: 5@5, server: 198.57.27.218, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
- - {name: 6@6, server: 145.239.1.137, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
- - {name: 7@7, server: 198.57.27.218, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
- - {name: 8@8, server: 91.245.254.235, port: 38742, cipher: aes-256-gcm, type: ss, password: DKXfWwc4ebscpXTKpbt85rSH}
- - {name: 9@9, server: 172.105.172.41, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
- - {name: 10@10, server: 167.88.63.82, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
- - {name: 11@11, server: 134.195.198.252, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
- - {name: 12@12, server: 145.239.1.137, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
- - {name: 13@13, server: 51.161.118.38, port: 812, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
- - {name: 14@14, server: 49.51.188.31, port: 32095, cipher: aes-256-cfb, type: ss, password: lanluojing320}
+  - {name: 0@0, server: 172.99.190.153, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 1@1, server: 89.37.95.17, port: 31944, cipher: aes-256-gcm, type: ss, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 2@2, server: 172.105.172.41, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 3@3, server: 198.57.27.218, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 4@4, server: 2.58.242.133, port: 35294, cipher: aes-256-gcm, type: ss, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 5@5, server: 172.99.190.158, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 6@6, server: 185.108.106.171, port: 39772, cipher: aes-256-gcm, type: ss, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 7@7, server: 91.205.230.133, port: 34687, cipher: aes-256-gcm, type: ss, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 8@8, server: cn2.relay.starlink.st, port: 65011, type: vmess, uuid: 6c810d84-b725-4a7a-8c9a-10d99a14cfcb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: cn2.relay.starlink.st}}
+  - {name: 9@9, server: 167.88.63.11, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 10@10, server: 172.99.190.149, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 11@11, server: 194.39.127.183, port: 39772, cipher: aes-256-gcm, type: ss, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 12@12, server: 198.57.27.218, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 13@13, server: 172.105.172.41, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 14@14, server: 191.96.13.212, port: 34687, cipher: aes-256-gcm, type: ss, password: txmK9WhwP6WPhP7hqSBLVxpN}
 proxy-groups:
- - name: 🔰 节点选择
-  type: select
-  proxies:
-   - ♻️ 自动选择
-   - 🎯 全球直连
-   - 0@0
-   - 1@1
-   - 2@2
-   - 3@3
-   - 4@4
-   - 5@5
-   - 6@6
-   - 7@7
-   - 8@8
-   - 9@9
-   - 10@10
-   - 11@11
-   - 12@12
-   - 13@13
-   - 14@14
- - name: ♻️ 自动选择
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  proxies:
-   - 0@0
-   - 1@1
-   - 2@2
-   - 3@3
-   - 4@4
-   - 5@5
-   - 6@6
-   - 7@7
-   - 8@8
-   - 9@9
-   - 10@10
-   - 11@11
-   - 12@12
-   - 13@13
-   - 14@14
- - name: 🌍 国外媒体
-  type: select
-  proxies:
-   - 🔰 节点选择
-   - ♻️ 自动选择
-   - 🎯 全球直连
-   - 0@0
-   - 1@1
-   - 2@2
-   - 3@3
-   - 4@4
-   - 5@5
-   - 6@6
-   - 7@7
-   - 8@8
-   - 9@9
-   - 10@10
-   - 11@11
-   - 12@12
-   - 13@13
-   - 14@14
- - name: 🌏 国内媒体
-  type: select
-  proxies:
-   - 🎯 全球直连
-   - 🔰 节点选择
-   - 0@0
-   - 1@1
-   - 2@2
-   - 3@3
-   - 4@4
-   - 5@5
-   - 6@6
-   - 7@7
-   - 8@8
-   - 9@9
-   - 10@10
-   - 11@11
-   - 12@12
-   - 13@13
-   - 14@14
- - name: Ⓜ️ 微软服务
-  type: select
-  proxies:
-   - 🎯 全球直连
-   - 🔰 节点选择
-   - 0@0
-   - 1@1
-   - 2@2
-   - 3@3
-   - 4@4
-   - 5@5
-   - 6@6
-   - 7@7
-   - 8@8
-   - 9@9
-   - 10@10
-   - 11@11
-   - 12@12
-   - 13@13
-   - 14@14
- - name: 📲 电报信息
-  type: select
-  proxies:
-   - 🔰 节点选择
-   - 🎯 全球直连
-   - 0@0
-   - 1@1
-   - 2@2
-   - 3@3
-   - 4@4
-   - 5@5
-   - 6@6
-   - 7@7
-   - 8@8
-   - 9@9
-   - 10@10
-   - 11@11
-   - 12@12
-   - 13@13
-   - 14@14
- - name: 🍎 苹果服务
-  type: select
-  proxies:
-   - 🔰 节点选择
-   - 🎯 全球直连
-   - ♻️ 自动选择
-   - 0@0
-   - 1@1
-   - 2@2
-   - 3@3
-   - 4@4
-   - 5@5
-   - 6@6
-   - 7@7
-   - 8@8
-   - 9@9
-   - 10@10
-   - 11@11
-   - 12@12
-   - 13@13
-   - 14@14
- - name: 🎯 全球直连
-  type: select
-  proxies:
-   - DIRECT
-   - 0@0
-   - 1@1
-   - 2@2
-   - 3@3
-   - 4@4
-   - 5@5
-   - 6@6
-   - 7@7
-   - 8@8
-   - 9@9
-   - 10@10
-   - 11@11
-   - 12@12
-   - 13@13
-   - 14@14
- - name: 🛑 全球拦截
-  type: select
-  proxies:
-   - REJECT
-   - DIRECT
-   - 0@0
-   - 1@1
-   - 2@2
-   - 3@3
-   - 4@4
-   - 5@5
-   - 6@6
-   - 7@7
-   - 8@8
-   - 9@9
-   - 10@10
-   - 11@11
-   - 12@12
-   - 13@13
-   - 14@14
- - name: 🐟 漏网之鱼
-  type: select
-  proxies:
-   - 🎯 全球直连
-   - 🔰 节点选择
-   - ♻️ 自动选择 
-   - 0@0
-   - 1@1
-   - 2@2
-   - 3@3
-   - 4@4
-   - 5@5
-   - 6@6
-   - 7@7
-   - 8@8
-   - 9@9
-   - 10@10
-   - 11@11
-   - 12@12
-   - 13@13
-   - 14@14
+  - name: 🔰 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 0@0
+      - 1@1
+      - 2@2
+      - 3@3
+      - 4@4
+      - 5@5
+      - 6@6
+      - 7@7
+      - 8@8
+      - 9@9
+      - 10@10
+      - 11@11
+      - 12@12
+      - 13@13
+      - 14@14
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - 0@0
+      - 1@1
+      - 2@2
+      - 3@3
+      - 4@4
+      - 5@5
+      - 6@6
+      - 7@7
+      - 8@8
+      - 9@9
+      - 10@10
+      - 11@11
+      - 12@12
+      - 13@13
+      - 14@14
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 0@0
+      - 1@1
+      - 2@2
+      - 3@3
+      - 4@4
+      - 5@5
+      - 6@6
+      - 7@7
+      - 8@8
+      - 9@9
+      - 10@10
+      - 11@11
+      - 12@12
+      - 13@13
+      - 14@14
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🔰 节点选择
+      - 0@0
+      - 1@1
+      - 2@2
+      - 3@3
+      - 4@4
+      - 5@5
+      - 6@6
+      - 7@7
+      - 8@8
+      - 9@9
+      - 10@10
+      - 11@11
+      - 12@12
+      - 13@13
+      - 14@14
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🔰 节点选择
+      - 0@0
+      - 1@1
+      - 2@2
+      - 3@3
+      - 4@4
+      - 5@5
+      - 6@6
+      - 7@7
+      - 8@8
+      - 9@9
+      - 10@10
+      - 11@11
+      - 12@12
+      - 13@13
+      - 14@14
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - 🎯 全球直连
+      - 0@0
+      - 1@1
+      - 2@2
+      - 3@3
+      - 4@4
+      - 5@5
+      - 6@6
+      - 7@7
+      - 8@8
+      - 9@9
+      - 10@10
+      - 11@11
+      - 12@12
+      - 13@13
+      - 14@14
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🔰 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 0@0
+      - 1@1
+      - 2@2
+      - 3@3
+      - 4@4
+      - 5@5
+      - 6@6
+      - 7@7
+      - 8@8
+      - 9@9
+      - 10@10
+      - 11@11
+      - 12@12
+      - 13@13
+      - 14@14
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 0@0
+      - 1@1
+      - 2@2
+      - 3@3
+      - 4@4
+      - 5@5
+      - 6@6
+      - 7@7
+      - 8@8
+      - 9@9
+      - 10@10
+      - 11@11
+      - 12@12
+      - 13@13
+      - 14@14
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+      - 0@0
+      - 1@1
+      - 2@2
+      - 3@3
+      - 4@4
+      - 5@5
+      - 6@6
+      - 7@7
+      - 8@8
+      - 9@9
+      - 10@10
+      - 11@11
+      - 12@12
+      - 13@13
+      - 14@14
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🔰 节点选择
+      - ♻️ 自动选择  
+      - 0@0
+      - 1@1
+      - 2@2
+      - 3@3
+      - 4@4
+      - 5@5
+      - 6@6
+      - 7@7
+      - 8@8
+      - 9@9
+      - 10@10
+      - 11@11
+      - 12@12
+      - 13@13
+      - 14@14
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
