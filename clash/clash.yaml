@@ -5,21 +5,21 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 134.195.196.199, port: 5004, cipher: aes-256-gcm, type: ss, password: g5MeD6Ft3CWlJId}
-  - {name: 1@1, server: 172.99.190.35, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 2@2, server: 198.57.27.218, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 3@3, server: 134.195.196.179, port: 3389, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
-  - {name: 4@4, server: 167.88.63.11, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 5@5, server: 47.240.25.152, port: 2096, type: vmess, uuid: 60665a07-09d5-3505-9bd4-c09d02fe46b8, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /zhs, ws-headers: {Host: 47.240.25.152}}
-  - {name: 6@6, server: Dx600twnew4.soflyso.info, port: 443, cipher: aes-256-gcm, type: ss, password: 973d3abdc9b2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: Dx600twnew4.soflyso.info, tls: true, skip-cert-verify: true, mux: true}}
-  - {name: 7@7, server: 46.182.107.62, port: 443, type: vmess, uuid: c1e96bf3-58f7-4534-93d6-901c71c4873b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.17888690.xyz}}
-  - {name: 8@8, server: 172.99.190.153, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 9@9, server: 134.195.196.50, port: 3389, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
-  - {name: 10@10, server: 203.23.128.99, port: 2053, type: vmess, uuid: 60665a07-09d5-3505-9bd4-c09d02fe46b8, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /zhs, ws-headers: {Host: 203.23.128.99}}
-  - {name: 11@11, server: 46.182.107.101, port: 443, type: vmess, uuid: 11117d4c-3b6a-4e76-8bcc-2b41b3e9ca93, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.16101225.xyz}}
-  - {name: 12@12, server: 134.195.196.179, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 13@13, server: 38.107.226.146, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 14@14, server: 167.88.63.99, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 0@0, server: 84.17.53.227, port: 41676, cipher: aes-256-gcm, type: ss, password: z6pH3RyttkRWhJ5tpRyt6dYk}
+  - {name: 1@1, server: 134.195.196.110, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 2@2, server: 134.195.196.179, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 3@3, server: 134.195.196.50, port: 3306, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
+  - {name: 4@4, server: 84.17.53.227, port: 42304, cipher: aes-256-gcm, type: ss, password: p26v2JwhQVHDHsXk66fXt56r}
+  - {name: 5@5, server: 84.17.53.227, port: 48794, cipher: aes-256-gcm, type: ss, password: r9Q3adc3ru9sfBDPEj4yp6U6}
+  - {name: 6@6, server: www.shunxin.ml, port: 443, type: vmess, uuid: 4f6aa0c3-7be1-4eaa-a64c-a23418070422, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /b06fde1/, ws-headers: {Host: www.shunxin.ml}}
+  - {name: 7@7, server: 154.84.1.214, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.44590130.xyz}}
+  - {name: 8@8, server: 84.17.53.227, port: 33998, cipher: aes-256-gcm, type: ss, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 9@9, server: 185.174.159.51, port: 39772, cipher: aes-256-gcm, type: ss, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 10@10, server: 45.87.214.253, port: 37588, cipher: aes-256-gcm, type: ss, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 11@11, server: 134.195.196.163, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 12@12, server: 208.64.226.100, port: 443, type: vmess, uuid: 07d70da3-6931-4471-8dd7-3ad22106bbff, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.62238769.xyz}}
+  - {name: 13@13, server: 84.17.53.227, port: 46726, cipher: aes-256-gcm, type: ss, password: 2fqKbFPGHpcmMTJzGsUbsfYf}
+  - {name: 14@14, server: 84.17.53.227, port: 38033, cipher: aes-256-gcm, type: ss, password: xpQwyV4W5FdA6NMANJJx73US}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
