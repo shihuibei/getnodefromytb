@@ -99,6 +99,7 @@ def parseLink(link, idx):
             password = encodebytes.split(":")[1]
             server = raw.split(':')[0]            
             port = raw.split(':')[1].split("#")[0].split('?')[0]
+            port = port.replace("/", "")
             data = {
                 'name': str(idx) + "@" + str(idx),
                 'server': server,
