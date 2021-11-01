@@ -14,6 +14,7 @@ from PIL import Image
 import base64
 import urllib
 import json
+import re
 
 ssVemssList = set()
 n = 15
@@ -97,8 +98,7 @@ def parseLink(link, idx):
             cipher = encodebytes.split(":")[0]
             password = encodebytes.split(":")[1]
             server = raw.split(':')[0]            
-            temp = raw.split(':')[1].split("#")[0].split('/?')
-            port = raw.split(':')[1].split("#")[0].split('/?')[0]
+            port = raw.split(':')[1].split("#")[0].split('?')[0]
             data = {
                 'name': str(idx) + "@" + str(idx),
                 'server': server,
@@ -107,14 +107,26 @@ def parseLink(link, idx):
                 'type': 'ss',
                 'password': password
             } 
-            if(len(temp) == 2):
+            if("plugin" in raw):
                 # plugin=simple-obfs;obfs=tls;obfs-host=n46hm52773.wns.windows.com
-                # plugin: obfs, plugin-opts: {mode: tls, host: n46hm52773.wns.windows.com}
-                plugis = raw.split(':')[1].split("#")[0].split('/?')[1]
-                plugin = plugis.split(';')[0].split('plugin=')[1].replace("simple-", "")
-                mode = plugis.split(';')[1].replace("obfs=" ,"")
-                hosts = plugis.split(';')[2].replace("obfs-host=", "")
-                plugin_opts = '{mode: '+mode+', host: '+hosts+'}'
+                # plugin-opts: {mode: websocket, host: twn600wd4.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: true}
+                patternplugin = 'plugin=(.*?);'
+                plugin = re.search(patternplugin, raw).group(1)
+                plugin_opts = {}
+                pattern2 = 'mode=(.*?);'
+                mode = re.search(pattern2, raw).group(1)
+                plugin_opts['mode'] = mode;
+                pattern3 = 'host=(.*?);'
+                host = re.search(pattern3, raw).group(1)
+                plugin_opts['host'] = host;
+                if('tls' in raw):
+                    plugin_opts['tls'] = True
+                    plugin_opts['skip-cert-verify'] = True
+                if('mux' in raw):
+                    plugin_opts['mux'] = True
+                
+                plugin_optstr = str(plugin_opts).replace("True", "true").replace("'", "")
+                # print('plugin_opts', plugin_optstr)
                 data = {
                 'name': str(idx) + "@" + str(idx),
                 'server': server,
@@ -123,7 +135,7 @@ def parseLink(link, idx):
                 'type': 'ss',
                 'password': password,
                 'plugin': plugin,
-                'plugin-opts': plugin_opts
+                'plugin-opts': plugin_optstr
                 } 
               
             return str(data).replace("'", "")
