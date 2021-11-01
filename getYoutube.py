@@ -108,36 +108,41 @@ def parseLink(link, idx):
                 'type': 'ss',
                 'password': password
             } 
-            if("plugin" in raw):
-                # plugin=simple-obfs;obfs=tls;obfs-host=n46hm52773.wns.windows.com
-                # plugin-opts: {mode: websocket, host: twn600wd4.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: true}
-                patternplugin = 'plugin=(.*?);'
-                plugin = re.search(patternplugin, raw).group(1)
-                plugin_opts = {}
-                pattern2 = 'mode=(.*?);'
-                mode = re.search(pattern2, raw).group(1)
-                plugin_opts['mode'] = mode;
-                pattern3 = 'host=(.*?);'
-                host = re.search(pattern3, raw).group(1)
-                plugin_opts['host'] = host;
-                if('tls' in raw):
-                    plugin_opts['tls'] = True
-                    plugin_opts['skip-cert-verify'] = True
-                if('mux' in raw):
-                    plugin_opts['mux'] = True
-                
-                plugin_optstr = str(plugin_opts).replace("True", "true").replace("'", "")
-                # print('plugin_opts', plugin_optstr)
-                data = {
-                'name': str(idx) + "@" + str(idx),
-                'server': server,
-                'port': port,
-                'cipher':cipher,
-                'type': 'ss',
-                'password': password,
-                'plugin': plugin,
-                'plugin-opts': plugin_optstr
-                } 
+            try:
+                if("plugin" in raw):
+                    # plugin=simple-obfs;obfs=tls;obfs-host=n46hm52773.wns.windows.com
+                    # plugin-opts: {mode: websocket, host: twn600wd4.soflyso.info, path: "", tls: true, mux: true, skip-cert-verify: true}
+                    print('raw', raw)
+                    patternplugin = 'plugin=(.*?);'
+                    plugin = re.search(patternplugin, raw).group(1)
+                    plugin_opts = {}
+                    if("mode" in raw):
+                        pattern2 = 'mode=(.*?);'
+                        mode = re.search(pattern2, raw).group(1)
+                        plugin_opts['mode'] = mode;
+                    pattern3 = 'host=(.*?)(#|;)'
+                    host = re.search(pattern3, raw).group(1)
+                    plugin_opts['host'] = host;
+                    if('tls' in raw):
+                        plugin_opts['tls'] = True
+                        plugin_opts['skip-cert-verify'] = True
+                    if('mux' in raw):
+                        plugin_opts['mux'] = True
+                    
+                    plugin_optstr = str(plugin_opts).replace("True", "true").replace("'", "")
+                    print('plugin_opts', plugin_optstr)
+                    data = {
+                    'name': str(idx) + "@" + str(idx),
+                    'server': server,
+                    'port': port,
+                    'cipher':cipher,
+                    'type': 'ss',
+                    'password': password,
+                    'plugin': plugin,
+                    'plugin-opts': plugin_optstr
+                    }
+            except Exception:
+                print("执行出错")
               
             return str(data).replace("'", "")
     elif(link.startswith("vmess")):
@@ -159,7 +164,6 @@ def parseLink(link, idx):
         nodedict['ws-headers'] = "{Host: " +  dd['host'] + "}"
         return str(nodedict).replace('True', 'true').replace('False', 'false').replace("u'", "'").replace("'", "")
     return ""
-
 
 def setPG(nodes):
     # 设置策略组 auto,Fallback-auto,Proxy
