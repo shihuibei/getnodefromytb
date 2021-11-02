@@ -5,21 +5,21 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 118.107.244.112, port: 8080, cipher: aes-256-gcm, type: ss, password: KixLvKzwjekG00rm}
-  - {name: 1@1, server: jp1.racernet.link, port: 443, type: vmess, uuid: d12b7888-e61f-3308-a752-33d491dbaa1b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rhwsqaul, ws-headers: {Host: jp1.racernet.link}}
-  - {name: 2@2, server: twn600wd8.soflyso.info, port: 443, cipher: aes-256-gcm, type: ss, password: a22c307e4a69, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twn600wd8.soflyso.info, tls: true, skip-cert-verify: true, mux: true}}
-  - {name: 3@3, server: 172.105.167.214, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 4@4, server: 134.195.196.50, port: 5004, cipher: aes-256-gcm, type: ss, password: g5MeD6Ft3CWlJId}
-  - {name: 5@5, server: 154.84.1.77, port: 443, type: vmess, uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.98244389.xyz}}
-  - {name: 6@6, server: 46.182.107.87, port: 443, type: vmess, uuid: b8df3ef1-887f-4ee4-855f-4f80416c2464, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.23439261.xyz}}
-  - {name: 7@7, server: 172.99.190.158, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 8@8, server: 172.99.190.158, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 9@9, server: 167.88.63.82, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 10@10, server: 210.0.158.130, port: 443, type: vmess, uuid: d12b7888-e61f-3308-a752-33d491dbaa1b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /racernet, ws-headers: {Host: 210.0.158.130}}
-  - {name: 11@11, server: twn600wd4.soflyso.info, port: 443, cipher: aes-256-gcm, type: ss, password: bb01c71b1c9d, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twn600wd4.soflyso.info, tls: true, skip-cert-verify: true, mux: true}}
-  - {name: 12@12, server: 167.88.63.82, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 13@13, server: 172.99.190.158, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 14@14, server: 172.99.190.158, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 0@0, server: twn600wd8.soflyso.info, port: 443, cipher: aes-256-gcm, type: ss, password: a22c307e4a69, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twn600wd8.soflyso.info, tls: true, skip-cert-verify: true, mux: true}}
+  - {name: 1@1, server: 134.195.196.50, port: 3389, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
+  - {name: 2@2, server: 31.171.153.115, port: 39772, cipher: aes-256-gcm, type: ss, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 3@3, server: twn600wd4.soflyso.info, port: 443, cipher: aes-256-gcm, type: ss, password: bb01c71b1c9d, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twn600wd4.soflyso.info, tls: true, skip-cert-verify: true, mux: true}}
+  - {name: 4@4, server: 84.17.53.212, port: 44745, cipher: aes-256-gcm, type: ss, password: fyXdw87yCH9SAmFkPvsvLVqC}
+  - {name: 5@5, server: 84.17.53.212, port: 41992, cipher: aes-256-gcm, type: ss, password: XmQSxDCn5ehpcq6DBYms8FJf}
+  - {name: 6@6, server: 31.171.154.219, port: 33998, cipher: aes-256-gcm, type: ss, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 7@7, server: dx600twnewss001.soflyso.info, port: 443, cipher: aes-256-gcm, type: ss, password: bff483ac1406, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twnewss001.soflyso.info, tls: true, skip-cert-verify: true, mux: true}}
+  - {name: 8@8, server: 46.182.107.62, port: 443, type: vmess, uuid: c1e96bf3-58f7-4534-93d6-901c71c4873b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.17888690.xyz}}
+  - {name: 9@9, server: 172.99.190.149, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 10@10, server: 84.17.57.73, port: 33992, cipher: aes-256-gcm, type: ss, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 11@11, server: 134.195.196.179, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 12@12, server: twn600wd8.soflyso.info, port: 443, cipher: aes-256-gcm, type: ss, password: a22c307e4a69, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twn600wd8.soflyso.info, tls: true, skip-cert-verify: true, mux: true}}
+  - {name: 13@13, server: 154.84.1.80, port: 443, type: vmess, uuid: b7d08c8a-e880-4afc-86f4-dca99d7258c1, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.00225384.xyz}}
+  - {name: 14@14, server: 134.195.196.60, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
