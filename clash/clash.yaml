@@ -5,21 +5,21 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 5.189.202.16, port: 49396, cipher: aes-256-gcm, type: ss, password: BdRWC38L5JUDMTYNNxJGcUwB}
-  - {name: 1@1, server: 38.107.226.146, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 2@2, server: 45.12.222.245, port: 41992, cipher: aes-256-gcm, type: ss, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: 3@3, server: 185.252.222.107, port: 50168, cipher: aes-256-gcm, type: ss, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 4@4, server: 172.99.190.153, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 5@5, server: 62.212.239.51, port: 31764, cipher: aes-256-gcm, type: ss, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 6@6, server: 172.105.172.41, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 7@7, server: 167.88.63.119, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 8@8, server: 134.195.196.60, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 9@9, server: 134.195.196.60, port: 5003, cipher: aes-256-gcm, type: ss, password: g5MeD6Ft3CWlJId}
-  - {name: 10@10, server: 86.106.137.147, port: 39772, cipher: aes-256-gcm, type: ss, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 11@11, server: 2.58.46.3, port: 49653, cipher: aes-256-gcm, type: ss, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: 12@12, server: 45.12.222.245, port: 49514, cipher: aes-256-gcm, type: ss, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: 13@13, server: 172.99.190.35, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
-  - {name: 14@14, server: morton0.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: morton0.herokuapp.com}}
+  - {name: 0@0, server: 172.99.190.153, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 1@1, server: 194.150.167.36, port: 37588, cipher: aes-256-gcm, type: ss, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: 2@2, server: 46.182.107.87, port: 443, type: vmess, uuid: b8df3ef1-887f-4ee4-855f-4f80416c2464, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/323127100515, ws-headers: {Host: www.23439261.xyz}}
+  - {name: 3@3, server: 134.195.196.202, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 4@4, server: dx600twnews001.soflyso.info, port: 443, cipher: aes-256-gcm, type: ss, password: 90185e1ac1cf, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx600twnews001.soflyso.info, tls: true, skip-cert-verify: true, mux: true}}
+  - {name: 5@5, server: 134.195.196.50, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 6@6, server: 172.99.190.149, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 7@7, server: 198.57.27.218, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 8@8, server: 134.195.196.60, port: 5004, cipher: aes-256-gcm, type: ss, password: g5MeD6Ft3CWlJId}
+  - {name: 9@9, server: 134.195.196.50, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 10@10, server: 185.174.159.59, port: 37473, cipher: aes-256-gcm, type: ss, password: enctdKyJfSu76VqznKwTt6Ap}
+  - {name: 11@11, server: twn600wds10.soflyso.info, port: 443, cipher: aes-256-gcm, type: ss, password: fa1461264001, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: twn600wds10.soflyso.info, tls: true, skip-cert-verify: true, mux: true}}
+  - {name: 12@12, server: 172.99.190.153, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 13@13, server: 134.195.196.179, port: 3389, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
+  - {name: 14@14, server: 134.195.196.202, port: 5003, cipher: aes-256-gcm, type: ss, password: g5MeD6Ft3CWlJId}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
