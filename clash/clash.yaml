@@ -5,21 +5,21 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: ahmas.v2bees.com, port: 32315, type: vmess, uuid: 5d6c7299-810e-49a4-b10f-e8a6987e5b51, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ahmas.v2bees.com}}
-  - {name: 1@1, server: v1-aws-hk-13.niaoyun.online, port: 666, type: vmess, uuid: dcbd3481-eb2c-33bc-8cb3-a093b3b4e2bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /niaocloud, ws-headers: {Host: v1-aws-hk-13.niaoyun.online}}
-  - {name: 2@2, server: 2.58.241.45, port: 40282, cipher: aes-256-gcm, type: ss, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: 3@3, server: 195.12.49.82, port: 812, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
-  - {name: 4@4, server: 134.195.196.193, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 5@5, server: 209.216.92.197, port: 33998, cipher: aes-256-gcm, type: ss, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 6@6, server: 84.17.58.205, port: 37473, cipher: aes-256-gcm, type: ss, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: 7@7, server: 159.223.67.223, port: 58443, type: vmess, uuid: 07c40cf6-db51-4179-cce7-5607cc0d301b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 159.223.67.223}}
-  - {name: 8@8, server: 139.59.122.24, port: 34715, type: vmess, uuid: 28eeec13-db80-4cb9-9d30-060f4257d729, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 139.59.122.24}}
-  - {name: 9@9, server: 89.38.227.165, port: 38620, cipher: aes-256-gcm, type: ss, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 10@10, server: 212.102.54.130, port: 37473, cipher: aes-256-gcm, type: ss, password: enctdKyJfSu76VqznKwTt6Ap}
-  - {name: 11@11, server: 66.115.177.133, port: 33992, cipher: aes-256-gcm, type: ss, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 12@12, server: 37.120.212.75, port: 37588, cipher: aes-256-gcm, type: ss, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 13@13, server: 89.38.227.165, port: 31764, cipher: aes-256-gcm, type: ss, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 14@14, server: 195.12.49.82, port: 802, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
+  - {name: 0@0, server: g.v2bees.com, port: 26457, type: vmess, uuid: 5d6c7299-810e-49a4-b10f-e8a6987e5b51, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: g.v2bees.com}}
+  - {name: 1@1, server: 134.195.196.193, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 2@2, server: 23.92.127.91, port: 40093, cipher: aes-256-gcm, type: ss, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 3@3, server: 134.195.198.178, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 4@4, server: 212.102.44.73, port: 47027, cipher: aes-256-gcm, type: ss, password: Vt5pBJFwdtNB26cJbTXxm88Z}
+  - {name: 5@5, server: 134.195.196.50, port: 8080, cipher: aes-256-gcm, type: ss, password: KixLvKzwjekG00rm}
+  - {name: 6@6, server: 134.195.196.193, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 7@7, server: 66.115.177.141, port: 40093, cipher: aes-256-gcm, type: ss, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 8@8, server: 1.transit.t.qjnodeip.xyz, port: 15140, type: vmess, uuid: 1439886a-ecb5-3bbf-bc65-8bfb23d72ea0, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /Ub6w, ws-headers: {Host: 1.transit.t.qjnodeip.xyz}}
+  - {name: 9@9, server: hk2.racernet.link, port: 443, type: vmess, uuid: 95b09c58-719f-38c0-8c56-1a3440796b17, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /racernet, ws-headers: {Host: hk2.racernet.link}}
+  - {name: 10@10, server: zoomlogin.hostmeetingnow.tk, port: 8880, type: vmess, uuid: 8cf979a4-7d96-4915-abf9-167f295b3fa7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /45ufd6, ws-headers: {Host: zoomlogin.hostmeetingnow.tk}}
+  - {name: 11@11, server: v1.ssrsub.com, port: 166, type: vmess, uuid: 8962d993-c7ff-4768-9dce-e2e8273f73dc, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}}
+  - {name: 12@12, server: 84.17.57.73, port: 33992, cipher: aes-256-gcm, type: ss, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 13@13, server: 124.150.139.123, port: 39772, cipher: aes-256-gcm, type: ss, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 14@14, server: 124.150.139.35, port: 43893, cipher: aes-256-gcm, type: ss, password: YyCBeDdYX4cadHpCkkmdJLq8}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
