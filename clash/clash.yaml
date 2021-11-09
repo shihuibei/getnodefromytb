@@ -5,21 +5,21 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 2.58.242.133, port: 37588, cipher: aes-256-gcm, type: ss, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 1@1, server: 128.14.157.112, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: 128.14.157.112}}
-  - {name: 2@2, server: 89.38.227.165, port: 37588, cipher: aes-256-gcm, type: ss, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: 3@3, server: 180.149.228.27, port: 38620, cipher: aes-256-gcm, type: ss, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: 4@4, server: 66.115.177.133, port: 38742, cipher: aes-256-gcm, type: ss, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: 5@5, server: 180.149.228.27, port: 35294, cipher: aes-256-gcm, type: ss, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: 6@6, server: 45.9.249.243, port: 33992, cipher: aes-256-gcm, type: ss, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 7@7, server: hk5.racernet.link, port: 443, type: vmess, uuid: 95b09c58-719f-38c0-8c56-1a3440796b17, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /racernet, ws-headers: {Host: hk5.racernet.link}}
-  - {name: 8@8, server: 104.200.131.167, port: 40093, cipher: aes-256-gcm, type: ss, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 9@9, server: 195.47.194.42, port: 31764, cipher: aes-256-gcm, type: ss, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 10@10, server: hk2.racernet.link, port: 443, type: vmess, uuid: 95b09c58-719f-38c0-8c56-1a3440796b17, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /racernet, ws-headers: {Host: hk2.racernet.link}}
-  - {name: 11@11, server: ah.cncm.v2bees.com, port: 51013, type: vmess, uuid: 5d6c7299-810e-49a4-b10f-e8a6987e5b51, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ah.cncm.v2bees.com}}
-  - {name: 12@12, server: 212.102.44.94, port: 31764, cipher: aes-256-gcm, type: ss, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: 13@13, server: 103.192.80.131, port: 33992, cipher: aes-256-gcm, type: ss, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 14@14, server: 37.120.147.230, port: 800, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
+  - {name: 0@0, server: 45.125.247.91, port: 39772, cipher: aes-256-gcm, type: ss, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 1@1, server: 134.195.196.60, port: 5003, cipher: aes-256-gcm, type: ss, password: g5MeD6Ft3CWlJId}
+  - {name: 2@2, server: 118.107.244.112, port: 5004, cipher: aes-256-gcm, type: ss, password: g5MeD6Ft3CWlJId}
+  - {name: 3@3, server: 154.16.168.186, port: 45746, cipher: aes-256-gcm, type: ss, password: wEsFcHCvbL4eJkL4DZQa7RgR}
+  - {name: 4@4, server: 134.195.196.50, port: 3389, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
+  - {name: 5@5, server: 154.16.168.186, port: 33148, cipher: aes-256-gcm, type: ss, password: CMduaFXddcQbwNAAs7xFDnc8}
+  - {name: 6@6, server: 62.212.239.51, port: 33998, cipher: aes-256-gcm, type: ss, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 7@7, server: 138.199.2.132, port: 31944, cipher: aes-256-gcm, type: ss, password: aYNeKDMzYQYw4KbUbJA8Wszq}
+  - {name: 8@8, server: 79.110.54.125, port: 35294, cipher: aes-256-gcm, type: ss, password: J9Y2ncrdPEC38gwydNFFGBna}
+  - {name: 9@9, server: 185.108.106.106, port: 38620, cipher: aes-256-gcm, type: ss, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 10@10, server: 62.212.239.43, port: 50232, cipher: aes-256-gcm, type: ss, password: CjchzpwdSjRtDjezYMwx9BKM}
+  - {name: 11@11, server: 185.99.3.7, port: 33992, cipher: aes-256-gcm, type: ss, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 12@12, server: 172.99.190.139, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 13@13, server: 201.fbplay.net, port: 10026, cipher: aes-256-gcm, type: ss, password: 4c59b800}
+  - {name: 14@14, server: 62.212.239.51, port: 48938, cipher: aes-256-gcm, type: ss, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
