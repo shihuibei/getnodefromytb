@@ -16,7 +16,7 @@ import urllib
 import json
 import re
 url = 'https://www.youtube.com/watch?v=E3Q-hhRqoDA'
-interval = 120
+interval = 60
 ssVemssList = set()
 n = 15
 needRun = True;
