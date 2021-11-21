@@ -16,6 +16,7 @@ import urllib
 import json
 import re
 url = 'https://www.youtube.com/watch?v=E3Q-hhRqoDA'
+interval = 60
 ssVemssList = set()
 n = 15
 needRun = True;
@@ -289,7 +290,7 @@ def get_QR_doe():
     driver.get_screenshot_as_file(r"%s%s.png" % ('/tmp/', png))
 
     get_ewm('/tmp/' + png + ".png")
-    t = threading.Timer(30, get_QR_doe)
+    t = threading.Timer(interval, get_QR_doe)
     t.start()
 
 def push2gitlab():
