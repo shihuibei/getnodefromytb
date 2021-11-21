@@ -95,7 +95,7 @@ def parseLink(link, idx):
             encodebytes = str(base64.decodebytes(psword.encode('utf-8'))).replace("b'", "").replace("'", "")
             ports = list[1]   # urlencoded
             raw = str(urllib.parse.unquote(ports))
-            # print(psword, ports)
+            print(psword, ports)
             cipher = encodebytes.split(":")[0]
             password = encodebytes.split(":")[1]
             server = raw.split(':')[0]            
@@ -144,8 +144,32 @@ def parseLink(link, idx):
                     }
             except Exception:
                 print("执行出错")
-              
             return str(data).replace("'", "")
+        else:
+            link += "=" * ((4 - len(link) % 4) % 4)
+            encodebytes = str(base64.decodebytes(link.encode('utf-8'))).replace("b'", "").replace("'", "")
+            # print(encodebytes)
+            list = encodebytes.split("@")
+            ports = list[1]   # urlencoded
+            encodebytes = list[0]
+            raw = str(urllib.parse.unquote(ports))
+            # print(psword, ports)
+            cipher = encodebytes.split(":")[0]
+            password = encodebytes.split(":")[1]
+            server = raw.split(':')[0]            
+            port = raw.split(':')[1].split("#")[0].split('?')[0]
+            port = port.replace("/", "")
+            data = {
+                'name': str(idx) + "@" + str(idx),
+                'server': server,
+                'port': port,
+                'cipher':cipher,
+                'type': 'ss',
+                'password': password
+            }
+            return str(data).replace("'", "")
+              
+            
     elif(link.startswith("vmess")):
         
         link = link.replace("vmess://", "")
@@ -165,6 +189,7 @@ def parseLink(link, idx):
         nodedict['ws-headers'] = "{Host: " +  dd['host'] + "}"
         return str(nodedict).replace('True', 'true').replace('False', 'false').replace("u'", "'").replace("'", "")
     return ""
+
 
 def setPG(nodes):
     # 设置策略组 auto,Fallback-auto,Proxy
