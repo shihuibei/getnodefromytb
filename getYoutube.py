@@ -15,7 +15,7 @@ import base64
 import urllib
 import json
 import re
-
+url = 'https://www.youtube.com/watch?v=E3Q-hhRqoDA'
 ssVemssList = set()
 n = 15
 needRun = True;
@@ -30,7 +30,7 @@ if(needRun):
         path = "./chromedriver"
         path = "/usr/local/bin/chromedriver"
         driver = webdriver.Chrome(path, options=options)
-        driver.get("https://www.youtube.com/watch?v=a_8_CRE_RhU")
+        driver.get(url)
 
         timeout = 10 # seconds
         element = WebDriverWait(driver, timeout).until(lambda x: x.find_element_by_id("logo"))
