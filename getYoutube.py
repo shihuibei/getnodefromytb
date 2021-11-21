@@ -18,7 +18,7 @@ import re
 url = 'https://www.youtube.com/watch?v=E3Q-hhRqoDA'
 interval = 60
 ssVemssList = set()
-n = 15
+n = 10
 needRun = True;
 youtubeDir = os.getcwd();
 if(needRun):
@@ -27,8 +27,8 @@ if(needRun):
         options = Options()
         options.add_argument("--mute-audio")
         options.add_argument('headless')
-        # options.add_argument("--proxy-server=http://" + proxy)
-        path = "./chromedriver"
+        options.add_argument("--proxy-server=http://" + proxy)
+        # path = "./chromedriver"
         path = "/usr/local/bin/chromedriver"
         driver = webdriver.Chrome(path, options=options)
         driver.get(url)
@@ -146,14 +146,14 @@ def parseLink(link, idx):
                 print("执行出错")
             return str(data).replace("'", "")
         else:
+            link = link.split("#")[0]
             link += "=" * ((4 - len(link) % 4) % 4)
             encodebytes = str(base64.decodebytes(link.encode('utf-8'))).replace("b'", "").replace("'", "")
-            # print(encodebytes)
+            print(encodebytes)
             list = encodebytes.split("@")
             ports = list[1]   # urlencoded
             encodebytes = list[0]
             raw = str(urllib.parse.unquote(ports))
-            # print(psword, ports)
             cipher = encodebytes.split(":")[0]
             password = encodebytes.split(":")[1]
             server = raw.split(':')[0]            
@@ -189,7 +189,8 @@ def parseLink(link, idx):
         nodedict['ws-headers'] = "{Host: " +  dd['host'] + "}"
         return str(nodedict).replace('True', 'true').replace('False', 'false').replace("u'", "'").replace("'", "")
     return ""
-
+# sslink = 'ss://YWVzLTI1Ni1nY206ZHBHakE0R2t6VjI4UVBEWXpFcDk0Y1RlQDEzOC4xOTkuNDIuMTM2OjQ5NTE0#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD'
+# print(parseLink(sslink, 1))
 
 def setPG(nodes):
     # 设置策略组 auto,Fallback-auto,Proxy
