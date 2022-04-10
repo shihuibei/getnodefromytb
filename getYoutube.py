@@ -17,10 +17,10 @@ import json
 import re
 url = 'https://www.youtube.com/watch?v=E3Q-hhRqoDA'
 url = 'https://www.youtube.com/watch?v=_Mt_qnQs1Ps'
-url = 'https://www.youtube.com/watch?v=QY7iZR2paeM'
+url = 'https://www.youtube.com/watch?v=4hbf3eybAPk'
 interval = 60
 ssVemssList = set()
-n = 10
+n = 25
 needRun = True;
 youtubeDir = os.getcwd();
 if(needRun):
