@@ -20,7 +20,7 @@ url = 'https://www.youtube.com/watch?v=_Mt_qnQs1Ps'
 url = 'https://www.youtube.com/watch?v=4hbf3eybAPk'
 interval = 60
 ssVemssList = set()
-n = 10
+n = 5
 needRun = True;
 youtubeDir = os.getcwd();
 if(needRun):
