@@ -42,7 +42,7 @@ if(needRun):
                 driver.find_element_by_xpath('//*[@id="content"]/div[2]/div[5]/div[2]/ytd-button-renderer[2]').click()
             except Exception:
                 print("跳过cookie pop 窗口不存在")
-            time.sleep(10)
+            time.sleep(60)
             driver.refresh()
         element = WebDriverWait(driver, timeout).until(lambda x: x.find_element_by_id("logo"))
         print("Page is ready!")
