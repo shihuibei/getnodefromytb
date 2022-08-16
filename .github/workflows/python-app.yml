@@ -55,7 +55,7 @@ jobs:
       run: |                 
          git config --local user.email "shizhou1174151505@gmail.com"
          git config --local user.name "PyePB2D8GcFRfS"
-         git add clash/clash.yaml
+         git add .
          git commit -m "更新订阅链接"
     - name: 推送更改
       uses:  ad-m/github-push-action@master
