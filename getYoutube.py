@@ -90,7 +90,7 @@ def get_ewm(img_adds):
         txt_list = pyzbar.decode(img)
     except Exception as e: 
         print("解析图片错误 " + e)
-    if(stop>4):
+    if(stopNum>4):
         exit(0)
 
     for txt in txt_list:
