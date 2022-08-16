@@ -87,7 +87,7 @@ def get_ewm(img_adds):
         txt_list = pyzbar.decode(img)
     except Exception as e: 
         print("解析图片错误 " + e)
-    print("txt_list: " + txt_list)
+    print("txt_list: " + '&'.join(txt_list))
 
     for txt in txt_list:
         barcodeData = txt.data.decode("utf-8")
