@@ -22,6 +22,7 @@ n = 5
 stopNum = 0
 needRun = True;
 imgPath = './clash/'
+imgPath = '/tmp/'
 youtubeDir = os.getcwd();
 if(needRun):
     try:
@@ -90,8 +91,8 @@ def get_ewm(img_adds):
         txt_list = pyzbar.decode(img)
     except Exception as e: 
         print("解析图片错误 " + e)
-    if(stopNum>6):
-        exit(0)
+#     if(stopNum>6):
+#         exit(0)
 
     for txt in txt_list:
         barcodeData = txt.data.decode("utf-8")
