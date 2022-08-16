@@ -65,8 +65,11 @@ def isTxt(name, text):
 
 def get_ewm(img_adds):
     img = Image.open(img_adds)
-
-    txt_list = pyzbar.decode(img)
+    try:
+        txt_list = pyzbar.decode(img)
+    except Exception as e: 
+        print("解析图片错误 " + e)
+    
 
     for txt in txt_list:
         barcodeData = txt.data.decode("utf-8")
