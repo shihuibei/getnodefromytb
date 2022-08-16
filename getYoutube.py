@@ -70,9 +70,9 @@ def get_QR_doe():
     print("是否开始执行")
     play = driver.find_element_by_class_name("ytp-play-button").get_attribute("aria-label")
     try:
-        if(('pause' not in play) and ('Pause' not in play)):
-            driver.find_element_by_class_name("ytp-play-button").click()
-            time.sleep(1)
+#         if(('pause' not in play) and ('Pause' not in play)):
+        driver.find_element_by_class_name("ytp-play-button").click()
+        time.sleep(1)
     except Exception:
         print("没有元素")
     png = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
@@ -91,7 +91,7 @@ def get_ewm(img_adds):
         txt_list = pyzbar.decode(img)
     except Exception as e: 
         print("解析图片错误 " + e)
-    if(stopNum>4):
+    if(stopNum>6):
         exit(0)
 
     for txt in txt_list:
