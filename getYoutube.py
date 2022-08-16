@@ -37,7 +37,7 @@ if(needRun):
 
         timeout = 10 # seconds
         element = WebDriverWait(driver, timeout).until(lambda x: x.find_element_by_id("logo"))
-        for i in range(3):
+        for i in range(5):
             try:
                 driver.find_element_by_xpath('//*[@id="content"]/div[2]/div[5]/div[2]/ytd-button-renderer[2]').click()
             except Exception:
@@ -67,12 +67,11 @@ def isTxt(name, text):
 
 
 def get_QR_doe():
-    print("是否开始执行")
     play = driver.find_element_by_class_name("ytp-play-button").get_attribute("aria-label")
     try:
-#         if(('pause' not in play) and ('Pause' not in play)):
-        driver.find_element_by_class_name("ytp-play-button").click()
-        time.sleep(1)
+        if(('pause' not in play) and ('Pause' not in play)):
+            driver.find_element_by_class_name("ytp-play-button").click()
+            time.sleep(2)
     except Exception:
         print("没有元素")
     png = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
