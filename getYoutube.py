@@ -23,11 +23,11 @@ needRun = True;
 youtubeDir = os.getcwd();
 if(needRun):
     try:
-        proxy = "127.0.0.1:7890" # IP:PORT or HOST:PORT
+        proxy = "185.51.76.129:3080" # IP:PORT or HOST:PORT
         options = Options()
         options.add_argument("--mute-audio")
         options.add_argument('headless')
-        # options.add_argument("--proxy-server=http://" + proxy)
+        options.add_argument("--proxy-server=socks5://" + proxy)
         # path = "./chromedriver"
         path = "/usr/local/bin/chromedriver"
         driver = webdriver.Chrome(path, options=options)
@@ -74,6 +74,7 @@ def get_ewm(img_adds):
         if(((barcodeData.startswith("ss")) or (barcodeData.startswith("vmess")))
         and not (barcodeData.startswith("ssr"))):
             ssVemssList.add(barcodeData)
+            print("解析的地址: " + barcodeData)
             if(len(ssVemssList) >= n):
                 getClash(ssVemssList)
                 s = '\n'.join(ssVemssList)
