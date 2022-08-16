@@ -63,13 +63,31 @@ def isTxt(name, text):
     txtFile.close()
     return result
 
+
+def get_QR_doe():
+    print("是否开始执行")
+    play = driver.find_element_by_class_name("ytp-play-button").get_attribute("aria-label")
+    try:
+        if(('pause' not in play) and ('Pause' not in play)):
+            driver.find_element_by_class_name("ytp-play-button").click()
+            time.sleep(1)
+    except Exception:
+        print("没有元素")
+    png = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
+    driver.get_screenshot_as_file(r"%s%s.png" % ('/tmp/', png))
+
+    get_ewm('/tmp/' + png + ".png")
+    print("png path= " + png)
+    t = threading.Timer(interval, get_QR_doe)
+    t.start()
+    
 def get_ewm(img_adds):
     try:
         img = Image.open(img_adds)
         txt_list = pyzbar.decode(img)
     except Exception as e: 
         print("解析图片错误 " + e)
-    
+    print("txt_list: " + txt_list)
 
     for txt in txt_list:
         barcodeData = txt.data.decode("utf-8")
@@ -308,22 +326,7 @@ def getClash(nodes):
     with open(youtubeDir + "/clash/clash.yaml", 'a') as f:
         f.write(rules)
 
-def get_QR_doe():
-    print("是否开始执行")
-    play = driver.find_element_by_class_name("ytp-play-button").get_attribute("aria-label")
-    try:
-        if(('pause' not in play) and ('Pause' not in play)):
-            driver.find_element_by_class_name("ytp-play-button").click()
-            time.sleep(1)
-    except Exception:
-        print("没有元素")
-    png = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
-    driver.get_screenshot_as_file(r"%s%s.png" % ('/tmp/', png))
 
-    get_ewm('/tmp/' + png + ".png")
-    print("png path= " + png)
-    t = threading.Timer(interval, get_QR_doe)
-    t.start()
 
 def push2gitlab():
     with open( youtubeDir + "/clash/clash.yaml", "r") as f:
