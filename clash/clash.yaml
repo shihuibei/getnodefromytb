@@ -5,6 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 0@0, server: 62.210.113.98, port: 5001, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
+  - {name: 1@1, server: 38.121.43.71, port: 6697, cipher: aes-256-gcm, type: ss, password: TEzjfAYq2IjtuoS}
+  - {name: 2@2, server: 120.233.29.189, port: 65086, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: 120.233.29.189}}
+  - {name: 3@3, server: 196.247.59.154, port: 801, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
+  - {name: 4@4, server: 85.208.108.60, port: 8119, cipher: aes-256-gcm, type: ss, password: cdBIDV42DCwnfIN}
+  - {name: 5@5, server: sgzx-cn01.gatknqh.cn, port: 65076, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: sgzx-cn01.gatknqh.cn}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -16,6 +22,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
+      - 5@5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -26,6 +33,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
+      - 5@5
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -37,6 +45,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
+      - 5@5
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -47,6 +56,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
+      - 5@5
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -57,6 +67,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
+      - 5@5
   - name: 📲 电报信息
     type: select
     proxies:
@@ -67,6 +78,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
+      - 5@5
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -78,6 +90,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
+      - 5@5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -87,6 +100,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
+      - 5@5
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -97,6 +111,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
+      - 5@5
   - name: 🐟 漏网之鱼
     type: select
     proxies:
@@ -108,6 +123,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
+      - 5@5
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
