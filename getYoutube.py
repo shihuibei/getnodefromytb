@@ -90,8 +90,8 @@ def get_ewm(img_adds):
         img = Image.open(img_adds)
         txt_list = pyzbar.decode(img)
         if len(txt_list) == 0:
-            driver.find_element_by_class_name("ytp-play-button").click()
-            time.sleep(2)
+            button = driver.find_element_by_class_name('ytp-ad-skip-button-container')
+            button.click()
     except Exception as e: 
         print("解析图片错误 " + e)
     if(stopNum>30):
@@ -103,8 +103,14 @@ def get_ewm(img_adds):
         barcodeData = str(barcodeData)
         if(((barcodeData.startswith("ss")) or (barcodeData.startswith("vmess")))
         and not (barcodeData.startswith("ssr"))):
+#             检测是否包含
+            if barcodeData in ssVemssList:
+                    try:
+                        driver.find_element_by_class_name("ytp-play-button").click()
+                        time.sleep(2)
+                    except Exception as e: 
+                        print("播放没有打开 " + e)
             ssVemssList.add(barcodeData)
-            print("解析的地址: " + barcodeData)
             if(len(ssVemssList) >= n):
                 getClash(ssVemssList)
                 s = '\n'.join(ssVemssList)
