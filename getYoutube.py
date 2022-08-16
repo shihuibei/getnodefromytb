@@ -18,8 +18,9 @@ import re
 url = 'https://www.youtube.com/watch?v=4ivs7rZWcM8'
 interval = 20
 ssVemssList = set()
-n = 7
+n = 6
 stopNum = 0
+stopN = 60
 needRun = True;
 imgPath = './clash/'
 # imgPath = '/tmp/'
@@ -94,7 +95,7 @@ def get_ewm(img_adds):
             button.click()
     except Exception as e: 
         print("解析图片错误 " + e)
-    if(stopNum>30):
+    if(stopNum>stopN):
         exit(0)
     
 
