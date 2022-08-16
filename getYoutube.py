@@ -15,11 +15,12 @@ import base64
 import urllib
 import json
 import re
-url = 'https://www.youtube.com/watch?v=E3Q-hhRqoDA'
-url = 'https://www.youtube.com/watch?v=_Mt_qnQs1Ps'
-interval = 60
+url = 'https://www.youtube.com/watch?v=4ivs7rZWcM8'
+interval = 20
 ssVemssList = set()
-n = 10
+n = 5
+# imagePath = "./png/"
+imagePath = "/tmp/"
 needRun = True;
 youtubeDir = os.getcwd();
 if(needRun):
@@ -27,10 +28,9 @@ if(needRun):
         proxy = "127.0.0.1:7890" # IP:PORT or HOST:PORT
         options = Options()
         options.add_argument("--mute-audio")
-        options.add_argument('headless')
-        # options.add_argument("--proxy-server=http://" + proxy)
-        # path = "./chromedriver"
-        path = "/usr/local/bin/chromedriver"
+        # options.add_argument('headless')
+        options.add_argument("--proxy-server=http://" + proxy)
+        path = "./chromedriver"
         driver = webdriver.Chrome(path, options=options)
         driver.get(url)
 
@@ -314,9 +314,9 @@ def get_QR_doe():
     except Exception:
         print("没有元素")
     png = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
-    driver.get_screenshot_as_file(r"%s%s.png" % ('/tmp/', png))
+    driver.get_screenshot_as_file(r"%s%s.png" % (imagePath, png))
 
-    get_ewm('/tmp/' + png + ".png")
+    get_ewm(imagePath + png + ".png")
     t = threading.Timer(interval, get_QR_doe)
     t.start()
 
