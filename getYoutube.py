@@ -306,6 +306,7 @@ def getClash(nodes):
         f.write(rules)
 
 def get_QR_doe():
+    print("是否开始执行")
     play = driver.find_element_by_class_name("ytp-play-button").get_attribute("aria-label")
     try:
         if(('pause' not in play) and ('Pause' not in play)):
@@ -317,7 +318,7 @@ def get_QR_doe():
     driver.get_screenshot_as_file(r"%s%s.png" % ('/tmp/', png))
 
     get_ewm('/tmp/' + png + ".png")
-    print("是否开始执行")
+    print("png path= " + png)
     t = threading.Timer(interval, get_QR_doe)
     t.start()
 
