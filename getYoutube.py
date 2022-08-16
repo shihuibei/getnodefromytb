@@ -19,7 +19,7 @@ url = 'https://www.youtube.com/watch?v=4ivs7rZWcM8'
 interval = 20
 ssVemssList = set()
 n = 5
-global stopNum = 0
+stopNum = 0
 needRun = True;
 imgPath = './clash/'
 youtubeDir = os.getcwd();
@@ -81,6 +81,7 @@ def get_QR_doe():
     get_ewm(imgPath + png + ".png")
     print("png path= " + png)
     t = threading.Timer(interval, get_QR_doe)
+    global stopNum
     stopNum = stopNum + 1
     t.start()
     
