@@ -89,10 +89,14 @@ def get_ewm(img_adds):
     try:
         img = Image.open(img_adds)
         txt_list = pyzbar.decode(img)
+        if len(txt_list) == 0:
+            driver.find_element_by_class_name("ytp-play-button").click()
+            time.sleep(2)
     except Exception as e: 
         print("解析图片错误 " + e)
     if(stopNum>30):
         exit(0)
+    
 
     for txt in txt_list:
         barcodeData = txt.data.decode("utf-8")
