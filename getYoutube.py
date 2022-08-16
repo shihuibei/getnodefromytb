@@ -64,8 +64,8 @@ def isTxt(name, text):
     return result
 
 def get_ewm(img_adds):
-    img = Image.open(img_adds)
     try:
+        img = Image.open(img_adds)
         txt_list = pyzbar.decode(img)
     except Exception as e: 
         print("解析图片错误 " + e)
