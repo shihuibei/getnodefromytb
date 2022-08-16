@@ -19,7 +19,9 @@ url = 'https://www.youtube.com/watch?v=4ivs7rZWcM8'
 interval = 20
 ssVemssList = set()
 n = 5
+stopNum = 0
 needRun = True;
+imgPath = './clash/'
 youtubeDir = os.getcwd();
 if(needRun):
     try:
@@ -74,11 +76,12 @@ def get_QR_doe():
     except Exception:
         print("没有元素")
     png = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
-    driver.get_screenshot_as_file(r"%s%s.png" % ('/tmp/', png))
+    driver.get_screenshot_as_file(r"%s%s.png" % (imgPath, png))
 
-    get_ewm('/tmp/' + png + ".png")
+    get_ewm(imgPath + png + ".png")
     print("png path= " + png)
     t = threading.Timer(interval, get_QR_doe)
+    stopNum = stopNum + 1
     t.start()
     
 def get_ewm(img_adds):
@@ -87,6 +90,8 @@ def get_ewm(img_adds):
         txt_list = pyzbar.decode(img)
     except Exception as e: 
         print("解析图片错误 " + e)
+    if(stop>4):
+        exit(0)
 
     for txt in txt_list:
         barcodeData = txt.data.decode("utf-8")
