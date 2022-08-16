@@ -19,7 +19,7 @@ url = 'https://www.youtube.com/watch?v=4ivs7rZWcM8'
 interval = 20
 ssVemssList = set()
 n = 5
-stopNum = 0
+global stopNum = 0
 needRun = True;
 imgPath = './clash/'
 youtubeDir = os.getcwd();
