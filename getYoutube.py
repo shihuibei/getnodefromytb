@@ -27,7 +27,7 @@ if(needRun):
         options = Options()
         options.add_argument("--mute-audio")
         options.add_argument('headless')
-        options.add_argument("--proxy-server=socks5://" + proxy)
+#         options.add_argument("--proxy-server=socks5://" + proxy)
         # path = "./chromedriver"
         path = "/usr/local/bin/chromedriver"
         driver = webdriver.Chrome(path, options=options)
@@ -317,6 +317,7 @@ def get_QR_doe():
     driver.get_screenshot_as_file(r"%s%s.png" % ('/tmp/', png))
 
     get_ewm('/tmp/' + png + ".png")
+    print("是否开始执行")
     t = threading.Timer(interval, get_QR_doe)
     t.start()
 
