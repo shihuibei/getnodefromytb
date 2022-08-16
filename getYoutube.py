@@ -15,10 +15,8 @@ import base64
 import urllib
 import json
 import re
-url = 'https://www.youtube.com/watch?v=E3Q-hhRqoDA'
-url = 'https://www.youtube.com/watch?v=_Mt_qnQs1Ps'
-url = 'https://www.youtube.com/watch?v=4hbf3eybAPk'
-interval = 60
+url = 'https://www.youtube.com/watch?v=4ivs7rZWcM8'
+interval = 20
 ssVemssList = set()
 n = 5
 needRun = True;
