@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 62.210.113.98, port: 5001, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
-  - {name: 1@1, server: 38.121.43.71, port: 6697, cipher: aes-256-gcm, type: ss, password: TEzjfAYq2IjtuoS}
-  - {name: 2@2, server: 120.233.29.189, port: 65086, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: 120.233.29.189}}
-  - {name: 3@3, server: 196.247.59.154, port: 801, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
-  - {name: 4@4, server: 85.208.108.60, port: 8119, cipher: aes-256-gcm, type: ss, password: cdBIDV42DCwnfIN}
-  - {name: 5@5, server: sgzx-cn01.gatknqh.cn, port: 65076, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: sgzx-cn01.gatknqh.cn}}
+  - {name: 0@0, server: 213.183.53.182, port: 9080, cipher: aes-256-cfb, type: ss, password: VP8ZPxQpJtZRCjfZ}
+  - {name: 1@1, server: 213.183.53.214, port: 9040, cipher: aes-256-cfb, type: ss, password: p9z5BVADH2YFs3MN}
+  - {name: 2@2, server: 38.121.43.71, port: 5004, cipher: aes-256-gcm, type: ss, password: g5MeD6Ft3CWlJId}
+  - {name: 3@3, server: 213.183.53.214, port: 9038, cipher: aes-256-cfb, type: ss, password: gYCYXfkUQEs2TaJQ}
+  - {name: 4@4, server: 167.88.61.14, port: 6379, cipher: aes-256-gcm, type: ss, password: zDNVedRFPQexG9v}
+  - {name: 5@5, server: 185.246.155.35, port: 9042, cipher: aes-256-cfb, type: ss, password: S7KwUu7yBy58S3Ga}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
