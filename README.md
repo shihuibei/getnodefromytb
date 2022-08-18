@@ -3,6 +3,6 @@
 
 #订阅地址：  
 v2ray:  
-https://gitlab.com/shojojwfwlfwfw/test/-/raw/main/v2ray.txt  
+https://tinyurl.com/2uuduutj   
 clash:  
-https://gitlab.com/shojojwfwlfwfw/test/-/raw/main/clash.yaml
+https://tinyurl.com/2p8z99t5  
