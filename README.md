@@ -4,5 +4,5 @@
 #订阅地址：  
 v2ray:  
 https://gitlab.com/shojojwfwlfwfw/test/-/raw/main/v2ray.txt  
-clash:
+clash:  
 https://gitlab.com/shojojwfwlfwfw/test/-/raw/main/clash.yaml
