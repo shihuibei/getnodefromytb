@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-sg-1.onebox6.org}}
-  - {name: 1@1, server: best02.downloadmovie.cn, port: 65086, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: best02.downloadmovie.cn}}
-  - {name: 2@2, server: relay1.wallless.cloud, port: 39021, type: vmess, uuid: 6f686183-b399-4976-a60f-dd2685ef8075, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: relay1.wallless.cloud}}
-  - {name: 3@3, server: 217.30.10.68, port: 9073, cipher: aes-256-cfb, type: ss, password: daFYagqDdBdA6VTX}
-  - {name: 4@4, server: 38.143.66.20, port: 9101, cipher: aes-256-gcm, type: ss, password: e4FCWrgpkji3QY}
-  - {name: 5@5, server: 217.30.10.68, port: 9032, cipher: aes-256-cfb, type: ss, password: UWZQeLRWnkqgkseq}
+  - {name: 0@0, server: best03.downloadmovie.cn, port: 65096, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: best03.downloadmovie.cn}}
+  - {name: 1@1, server: 213.183.59.190, port: 9053, cipher: aes-256-cfb, type: ss, password: SBM7R883jBmnqe6C}
+  - {name: 2@2, server: 120.233.150.146, port: 65079, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: 120.233.150.146}}
+  - {name: 3@3, server: 38.121.43.65, port: 2375, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 4@4, server: 213.183.59.190, port: 9059, cipher: aes-256-cfb, type: ss, password: 9XwYyZsK8SNzQDtY}
+  - {name: 5@5, server: 138.197.166.205, port: 811, cipher: chacha20-ietf-poly1305, type: ss, password: Ultr@r00t_2017}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
