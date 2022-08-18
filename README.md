@@ -3,6 +3,6 @@
 
 #订阅地址：  
 v2ray:  
-https://tinyurl.com/2uuduutj   
+https://suo.yt/J5Agfq5     
 clash:  
-https://tinyurl.com/2p8z99t5  
+https://suo.yt/zeSn7i2  
