@@ -23,7 +23,7 @@ stopNum = 0
 stopN = 60
 needRun = True;
 imgPath = './clash/'
-# imgPath = '/tmp/'
+imgPath = '/tmp/'
 youtubeDir = os.getcwd();
 if(needRun):
     try:
@@ -94,7 +94,7 @@ def get_ewm(img_adds):
             driver.find_element_by_class_name("ytp-play-button").click()
             time.sleep(2)
     except Exception as e: 
-        print("解析图片错误 " + e)
+        print("解析图片错误 " + str(e))
     if(stopNum>stopN):
         exit(0)
     
