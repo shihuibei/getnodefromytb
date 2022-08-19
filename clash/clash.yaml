@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 185.4.65.6, port: 21247, cipher: aes-256-cfb, type: ss, password: vDS9G2p}
-  - {name: 1@1, server: 47.241.220.160, port: 46622, type: vmess, uuid: 4a8610cd-ec1f-471b-f3cf-51241f1de4ff, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 47.241.220.160}}
-  - {name: 2@2, server: 213.183.53.198, port: 9018, cipher: aes-256-cfb, type: ss, password: fG2artUmHfNT2cX7}
-  - {name: 3@3, server: 213.183.53.198, port: 9018, cipher: aes-256-cfb, type: ss, password: fG2artUmHfNT2cX7}
-  - {name: 4@4, server: 185.126.116.119, port: 9058, cipher: aes-256-cfb, type: ss, password: dML2sfhbVwvtfNPe}
-  - {name: 5@5, server: 138.68.248.130, port: 811, cipher: chacha20-ietf-poly1305, type: ss, password: Ultr@r00t_2017}
+  - {name: 0@0, server: 185.167.77.195, port: 29650, type: vmess, uuid: 660dbb02-2297-466b-c7b2-1bb8a6e680e5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 185.167.77.195}}
+  - {name: 1@1, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}}
+  - {name: 2@2, server: 185.4.65.6, port: 21247, cipher: aes-256-cfb, type: ss, password: vDS9G2p}
+  - {name: 3@3, server: 36.137.147.7, port: 32087, cipher: aes-256-gcm, type: ss, password: dad0de41-db0c-4287-a4a6-d49d74c3d55e}
+  - {name: 4@4, server: cn02.downloadmovie.cn, port: 65040, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: cn02.downloadmovie.cn}}
+  - {name: 5@5, server: cn03.downloadmovie.cn, port: 65017, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: cn03.downloadmovie.cn}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
