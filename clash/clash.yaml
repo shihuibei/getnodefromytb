@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 183.232.158.66, port: 8003, cipher: chacha20-ietf-poly1305, type: ss, password: 0a00fe526e3592521559427839020652, plugin: simple-obfs, plugin-opts: {host: eb19780f3835.microsoft.com}}
-  - {name: 1@1, server: 185.246.155.29, port: 9040, cipher: aes-256-cfb, type: ss, password: p9z5BVADH2YFs3MN}
-  - {name: 2@2, server: 185.246.155.29, port: 9031, cipher: aes-256-cfb, type: ss, password: BwcAUZk8hUFAkDGN}
-  - {name: 3@3, server: 185.246.155.29, port: 9014, cipher: aes-256-cfb, type: ss, password: KnJGad3FqTvjqbaX}
-  - {name: 4@4, server: ersgdf.passwordv2.com, port: 7401, cipher: aes-128-gcm, type: ss, password: c0b4efb0-ab81-46f8-87af-815b62351089}
-  - {name: 5@5, server: 185.246.155.29, port: 9020, cipher: aes-256-cfb, type: ss, password: BNmAXXxAHYpTRdzu}
+  - {name: 0@0, server: 120.233.24.238, port: 7401, cipher: aes-128-gcm, type: ss, password: c0b4efb0-ab81-46f8-87af-815b62351089}
+  - {name: 1@1, server: 36.137.147.7, port: 32087, cipher: aes-256-gcm, type: ss, password: dad0de41-db0c-4287-a4a6-d49d74c3d55e}
+  - {name: 2@2, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}}
+  - {name: 3@3, server: 138.68.248.130, port: 811, cipher: chacha20-ietf-poly1305, type: ss, password: Ultr@r00t_2017}
+  - {name: 4@4, server: 183.232.158.66, port: 8003, cipher: chacha20-ietf-poly1305, type: ss, password: 0a00fe526e3592521559427839020652, plugin: simple-obfs, plugin-opts: {host: eb19780f3835.microsoft.com}}
+  - {name: 5@5, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 146.56.167.119}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
