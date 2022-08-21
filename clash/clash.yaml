@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 155.94.128.107, port: 46890, type: vmess, uuid: b638167d-18d5-447f-cd0e-6770af52a99f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /basketball, ws-headers: {Host: 155.94.128.107}}
-  - {name: 1@1, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: 192.96.204.250}}
-  - {name: 2@2, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 4.hk.zz.xxxxx.x-t-fuckword.network}}
-  - {name: 3@3, server: 185.4.65.6, port: 21247, cipher: aes-256-cfb, type: ss, password: vDS9G2p}
-  - {name: 4@4, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: 45.35.84.162}}
-  - {name: 5@5, server: 120.233.151.66, port: 11928, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /rocket, ws-headers: {Host: 120.233.151.66}}
+  - {name: 0@0, server: 185.4.65.6, port: 21247, cipher: aes-256-cfb, type: ss, password: vDS9G2p}
+  - {name: 1@1, server: 138.68.248.130, port: 811, cipher: chacha20-ietf-poly1305, type: ss, password: Ultr@r00t_2017}
+  - {name: 2@2, server: 155.94.128.107, port: 46890, type: vmess, uuid: b638167d-18d5-447f-cd0e-6770af52a99f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /basketball, ws-headers: {Host: 155.94.128.107}}
+  - {name: 3@3, server: 85.208.108.93, port: 7002, cipher: aes-256-gcm, type: ss, password: RexnBgU7EV5ADxG}
+  - {name: 4@4, server: 38.143.66.20, port: 9102, cipher: aes-256-gcm, type: ss, password: e4FCWrgpkji3QY}
+  - {name: 5@5, server: 85.208.108.93, port: 6379, cipher: aes-256-gcm, type: ss, password: zDNVedRFPQexG9v}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
