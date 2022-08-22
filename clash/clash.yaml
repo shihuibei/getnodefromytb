@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 183.232.158.67, port: 8765, cipher: aes-128-gcm, type: ss, password: 24ffe5a4c321e0b926dc335a91c2d78a, plugin: simple-obfs, plugin-opts: {host: eb19780f3835.microsoft.com}}
-  - {name: 1@1, server: 120.233.24.238, port: 7410, cipher: aes-128-gcm, type: ss, password: 5478031491c1d1373c959397435f2a35, plugin: simple-obfs, plugin-opts: {host: a68f742ca034.microsoft.com}}
-  - {name: 2@2, server: debian10.domainsv3.com, port: 8003, cipher: chacha20-ietf-poly1305, type: ss, password: 0a00fe526e3592521559427839020652, plugin: simple-obfs, plugin-opts: {host: eb19780f3835.microsoft.com}}
-  - {name: 3@3, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 4.hk.zz.xxxxx.x-t-fuckword.network}}
-  - {name: 4@4, server: debian10.updatensv3.com, port: 8015, cipher: chacha20-ietf-poly1305, type: ss, password: d6fa3a869c3a4a3edb8416e36a59e4aa, plugin: simple-obfs, plugin-opts: {host: eb19780f3835.microsoft.com}}
-  - {name: 5@5, server: 120.233.24.238, port: 7410, cipher: aes-128-gcm, type: ss, password: 5478031491c1d1373c959397435f2a35, plugin: simple-obfs, plugin-opts: {host: a68f742ca034.microsoft.com}}
+  - {name: 0@0, server: crj749919467.n-tmd.com, port: 31502, type: vmess, uuid: 9b4f0258-1127-41d9-f30a-469e80737327, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: crj749919467.n-tmd.com}}
+  - {name: 1@1, server: 185.126.116.123, port: 9027, cipher: aes-256-cfb, type: ss, password: EXN3S3eQpjE7EJu8}
+  - {name: 2@2, server: 185.126.116.123, port: 9080, cipher: aes-256-cfb, type: ss, password: VP8ZPxQpJtZRCjfZ}
+  - {name: 3@3, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 4.3.1.fuckppppp.today}}
+  - {name: 4@4, server: 138.68.248.130, port: 811, cipher: chacha20-ietf-poly1305, type: ss, password: Ultr@r00t_2017}
+  - {name: 5@5, server: 194.71.130.194, port: 50003, cipher: aes-256-cfb, type: ss, password: 8460400130}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
