@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 213.183.59.211, port: 9033, cipher: aes-256-cfb, type: ss, password: UTJA57ypk2XKQpnm}
-  - {name: 1@1, server: 213.183.59.206, port: 9093, cipher: aes-256-cfb, type: ss, password: wfLC2y7rzZyCmuyt}
-  - {name: 2@2, server: 213.183.59.190, port: 9080, cipher: aes-256-cfb, type: ss, password: VP8ZPxQpJtZRCjfZ}
-  - {name: 3@3, server: 213.183.59.190, port: 9080, cipher: aes-256-cfb, type: ss, password: VP8ZPxQpJtZRCjfZ}
-  - {name: 4@4, server: 213.183.59.190, port: 9088, cipher: aes-256-cfb, type: ss, password: f8npKgNzdkss2ytn}
-  - {name: 5@5, server: 213.183.59.190, port: 9027, cipher: aes-256-cfb, type: ss, password: EXN3S3eQpjE7EJu8}
+  - {name: 0@0, server: 185.126.116.123, port: 9058, cipher: aes-256-cfb, type: ss, password: dML2sfhbVwvtfNPe}
+  - {name: 1@1, server: 185.126.116.123, port: 9033, cipher: aes-256-cfb, type: ss, password: UTJA57ypk2XKQpnm}
+  - {name: 2@2, server: 213.183.59.190, port: 9053, cipher: aes-256-cfb, type: ss, password: SBM7R883jBmnqe6C}
+  - {name: 3@3, server: 38.111.114.246, port: 8882, cipher: aes-256-gcm, type: ss, password: kDWvXYZoTBcGkC4}
+  - {name: 4@4, server: 213.183.59.211, port: 9045, cipher: aes-256-cfb, type: ss, password: Lp27rqyJq72bZsqX}
+  - {name: 5@5, server: 213.183.59.211, port: 9024, cipher: aes-256-cfb, type: ss, password: BejrQvtu9sqUeNuZ}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
