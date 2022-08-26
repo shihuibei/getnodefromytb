@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 183.232.158.66, port: 9405, cipher: aes-256-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 1@1, server: 38.68.135.18, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 2@2, server: 38.75.136.34, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 3@3, server: 213.183.59.218, port: 9094, cipher: aes-256-cfb, type: ss, password: rpgbNnU9rDDU4aWZ}
-  - {name: 4@4, server: 38.68.135.18, port: 5601, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
-  - {name: 5@5, server: 38.75.136.34, port: 8080, cipher: aes-256-gcm, type: ss, password: KixLvKzwjekG00rm}
+  - {name: 0@0, server: centos8.expirationv3.com, port: 8745, cipher: aes-128-gcm, type: ss, password: 9c072decffd326dfe7976480e8792404, plugin: simple-obfs, plugin-opts: {host: 924af1d4735e.microsoft.com}}
+  - {name: 1@1, server: 213.183.59.191, port: 9020, cipher: aes-256-cfb, type: ss, password: BNmAXXxAHYpTRdzu}
+  - {name: 2@2, server: 213.183.59.211, port: 9058, cipher: aes-256-cfb, type: ss, password: dML2sfhbVwvtfNPe}
+  - {name: 3@3, server: 213.183.59.211, port: 9024, cipher: aes-256-cfb, type: ss, password: BejrQvtu9sqUeNuZ}
+  - {name: 4@4, server: 213.183.59.191, port: 9084, cipher: aes-256-cfb, type: ss, password: c3NtHJ5ujV2tGDfj}
+  - {name: 5@5, server: 38.68.135.18, port: 8009, cipher: aes-256-gcm, type: ss, password: XKFKl2rULjIp74}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
