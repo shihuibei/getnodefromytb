@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 213.183.59.190, port: 9097, cipher: aes-256-cfb, type: ss, password: Sn5B7jTqr76aCJT8}
-  - {name: 1@1, server: 213.183.59.191, port: 9043, cipher: aes-256-cfb, type: ss, password: HSZuyJQcWe8dxNdF}
-  - {name: 2@2, server: 213.183.59.191, port: 9046, cipher: aes-256-cfb, type: ss, password: NvS8N4Vf8qAGPSCL}
-  - {name: 3@3, server: 213.183.59.190, port: 9053, cipher: aes-256-cfb, type: ss, password: SBM7R883jBmnqe6C}
-  - {name: 4@4, server: 213.183.59.190, port: 9011, cipher: aes-256-cfb, type: ss, password: M3t2ZEQcMGRWBjRa}
-  - {name: 5@5, server: 213.183.59.218, port: 9001, cipher: aes-256-cfb, type: ss, password: UkXRsXvR6buDMG2Y}
+  - {name: 0@0, server: 183.232.158.66, port: 9405, cipher: aes-256-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 1@1, server: 38.68.135.18, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 2@2, server: 38.75.136.34, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 3@3, server: 213.183.59.218, port: 9094, cipher: aes-256-cfb, type: ss, password: rpgbNnU9rDDU4aWZ}
+  - {name: 4@4, server: 38.68.135.18, port: 5601, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
+  - {name: 5@5, server: 38.75.136.34, port: 8080, cipher: aes-256-gcm, type: ss, password: KixLvKzwjekG00rm}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
