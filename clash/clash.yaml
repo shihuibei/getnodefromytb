@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: dsdfg.updatensv3.com, port: 8740, cipher: aes-256-gcm, type: ss, password: 3d06cccd279f1cb5a33aebb2b50bf3ac, plugin: simple-obfs, plugin-opts: {host: 924af1d4735e.microsoft.com}}
-  - {name: 1@1, server: 38.68.135.18, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 2@2, server: 213.183.59.190, port: 9011, cipher: aes-256-cfb, type: ss, password: M3t2ZEQcMGRWBjRa}
-  - {name: 3@3, server: debian10.updatensv3.com, port: 8010, cipher: chacha20-ietf-poly1305, type: ss, password: 68ece1cafb98b06aa7a3edfefdf91de4, plugin: simple-obfs, plugin-opts: {host: 924af1d4735e.microsoft.com}}
-  - {name: 4@4, server: linux.nameserversv3.com, port: 9201, cipher: aes-256-gcm, type: ss, password: 2bf86435908573620556efdd3a4883ad, plugin: simple-obfs, plugin-opts: {host: 924af1d4735e.microsoft.com}}
-  - {name: 5@5, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 4.3.1.fuckppppp.today}}
+  - {name: 0@0, server: 213.183.59.211, port: 9057, cipher: aes-256-cfb, type: ss, password: wjTugX3ZtHMB9c3Z}
+  - {name: 1@1, server: linux.nameserversv3.com, port: 9201, cipher: aes-256-gcm, type: ss, password: 2bf86435908573620556efdd3a4883ad, plugin: simple-obfs, plugin-opts: {host: 924af1d4735e.microsoft.com}}
+  - {name: 2@2, server: 183.232.158.67, port: 9205, cipher: aes-256-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 3@3, server: 38.68.135.18, port: 8009, cipher: aes-256-gcm, type: ss, password: XKFKl2rULjIp74}
+  - {name: 4@4, server: uiug.expirationv3.com, port: 9405, cipher: aes-256-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 5@5, server: 183.232.158.66, port: 9407, cipher: aes-256-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
