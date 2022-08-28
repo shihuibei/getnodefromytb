@@ -6,3 +6,4 @@ v2ray:
 https://suo.yt/J5Agfq5     
 clash:  
 https://suo.yt/zeSn7i2  
+https://suo.yt/eYmP5ZE  
