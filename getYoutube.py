@@ -18,15 +18,9 @@ import re
 url = 'https://www.youtube.com/watch?v=4ivs7rZWcM8'
 interval = 20
 ssVemssList = set()
-<<<<<<< HEAD
-n = 5
-# imagePath = "./png/"
-imagePath = "/tmp/"
-=======
 n = 6
 stopNum = 0
 stopN = 100
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
 needRun = True;
 imgPath = './clash/'
 imgPath = '/tmp/'
@@ -36,16 +30,10 @@ if(needRun):
         proxy = "185.51.76.129:3080" # IP:PORT or HOST:PORT
         options = Options()
         options.add_argument("--mute-audio")
-<<<<<<< HEAD
-        # options.add_argument('headless')
-        options.add_argument("--proxy-server=http://" + proxy)
-        path = "./chromedriver"
-=======
         options.add_argument('headless')
 #         options.add_argument("--proxy-server=socks5://" + proxy)
         # path = "./chromedriver"
         path = "/usr/local/bin/chromedriver"
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
         driver = webdriver.Chrome(path, options=options)
         driver.get(url)
 
@@ -354,24 +342,7 @@ def getClash(nodes):
     with open(youtubeDir + "/clash/clash.yaml", 'a') as f:
         f.write(rules)
 
-<<<<<<< HEAD
-def get_QR_doe():
-    play = driver.find_element_by_class_name("ytp-play-button").get_attribute("aria-label")
-    try:
-        if(('pause' not in play) and ('Pause' not in play)):
-            driver.find_element_by_class_name("ytp-play-button").click()
-            time.sleep(1)
-    except Exception:
-        print("没有元素")
-    png = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
-    driver.get_screenshot_as_file(r"%s%s.png" % (imagePath, png))
 
-    get_ewm(imagePath + png + ".png")
-    t = threading.Timer(interval, get_QR_doe)
-    t.start()
-=======
-
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
 
 def push2gitlab():
     with open( youtubeDir + "/clash/clash.yaml", "r") as f:
@@ -426,6 +397,5 @@ def push2gitlabV2ray(content):
 
 if __name__ == '__main__':
     get_QR_doe()
-
 
 
