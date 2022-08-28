@@ -5,20 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-<<<<<<< HEAD
-  - {name: 0@0, server: 167.88.61.14, port: 8080, cipher: aes-256-gcm, type: ss, password: KixLvKzwjekG00rm}
-  - {name: 1@1, server: 213.183.53.214, port: 9000, cipher: aes-256-cfb, type: ss, password: a3GFYt36Sm82Vys9}
-  - {name: 2@2, server: 38.121.43.71, port: 8091, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 3@3, server: 213.183.53.207, port: 9098, cipher: aes-256-cfb, type: ss, password: aLpQtfEZe445QyHk}
-  - {name: 4@4, server: 172.99.188.71, port: 8119, cipher: aes-256-gcm, type: ss, password: cdBIDV42DCwnfIN}
-=======
-  - {name: 0@0, server: yum-y.update.mipglxi.cn, port: 6022, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 1@1, server: linux.nameserversv3.com, port: 9201, cipher: aes-256-gcm, type: ss, password: 2bf86435908573620556efdd3a4883ad, plugin: simple-obfs, plugin-opts: {host: 924af1d4735e.microsoft.com}}
-  - {name: 2@2, server: yum-y.update.mipglxi.cn, port: 6028, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 3@3, server: 213.183.59.206, port: 9025, cipher: aes-256-cfb, type: ss, password: XPtzA9sCug3SPR4c}
-  - {name: 4@4, server: 193.108.118.30, port: 9090, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
-  - {name: 5@5, server: 129.146.84.253, port: 26875, type: vmess, uuid: bb240cb0-a6d2-4b8e-ee85-a976e48ac241, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 129.146.84.253}}
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
+  - {name: 0@0, server: 120.233.24.162, port: 6008, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 1@1, server: 38.68.135.18, port: 4444, cipher: aes-256-gcm, type: ss, password: pKEW8JPByTVTLtM}
+  - {name: 2@2, server: 120.233.24.162, port: 6004, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 3@3, server: 120.233.24.162, port: 6009, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 4@4, server: 120.233.24.162, port: 6003, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 5@5, server: yum-y.update.mipglxi.cn, port: 6010, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -30,10 +22,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
-<<<<<<< HEAD
-=======
       - 5@5
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -44,10 +33,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
-<<<<<<< HEAD
-=======
       - 5@5
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -59,10 +45,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
-<<<<<<< HEAD
-=======
       - 5@5
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -73,10 +56,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
-<<<<<<< HEAD
-=======
       - 5@5
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -87,10 +67,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
-<<<<<<< HEAD
-=======
       - 5@5
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
   - name: 📲 电报信息
     type: select
     proxies:
@@ -101,10 +78,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
-<<<<<<< HEAD
-=======
       - 5@5
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -116,10 +90,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
-<<<<<<< HEAD
-=======
       - 5@5
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -129,10 +100,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
-<<<<<<< HEAD
-=======
       - 5@5
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
   - name: 🛑 全球拦截
     type: select
     proxies:
@@ -143,10 +111,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
-<<<<<<< HEAD
-=======
       - 5@5
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
   - name: 🐟 漏网之鱼
     type: select
     proxies:
@@ -158,10 +123,7 @@ proxy-groups:
       - 2@2
       - 3@3
       - 4@4
-<<<<<<< HEAD
-=======
       - 5@5
->>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
