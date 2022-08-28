@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 213.183.59.211, port: 9094, cipher: aes-256-cfb, type: ss, password: rpgbNnU9rDDU4aWZ}
-  - {name: 1@1, server: debian10.updatensv3.com, port: 8004, cipher: chacha20-ietf-poly1305, type: ss, password: 4e2c7e7b0d175c08edc96e7b946415c6, plugin: simple-obfs, plugin-opts: {host: 924af1d4735e.microsoft.com}}
-  - {name: 2@2, server: 38.121.43.204, port: 8119, cipher: aes-256-gcm, type: ss, password: cdBIDV42DCwnfIN}
-  - {name: 3@3, server: centos8.expirationv3.com, port: 8745, cipher: aes-128-gcm, type: ss, password: 9c072decffd326dfe7976480e8792404, plugin: simple-obfs, plugin-opts: {host: 924af1d4735e.microsoft.com}}
-  - {name: 4@4, server: 213.183.59.191, port: 9088, cipher: aes-256-cfb, type: ss, password: f8npKgNzdkss2ytn}
-  - {name: 5@5, server: 213.183.59.211, port: 9018, cipher: aes-256-cfb, type: ss, password: fG2artUmHfNT2cX7}
+  - {name: 0@0, server: yum-y.update.mipglxi.cn, port: 6022, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 1@1, server: linux.nameserversv3.com, port: 9201, cipher: aes-256-gcm, type: ss, password: 2bf86435908573620556efdd3a4883ad, plugin: simple-obfs, plugin-opts: {host: 924af1d4735e.microsoft.com}}
+  - {name: 2@2, server: yum-y.update.mipglxi.cn, port: 6028, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 3@3, server: 213.183.59.206, port: 9025, cipher: aes-256-cfb, type: ss, password: XPtzA9sCug3SPR4c}
+  - {name: 4@4, server: 193.108.118.30, port: 9090, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
+  - {name: 5@5, server: 129.146.84.253, port: 26875, type: vmess, uuid: bb240cb0-a6d2-4b8e-ee85-a976e48ac241, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 129.146.84.253}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
