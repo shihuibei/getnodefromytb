@@ -18,30 +18,45 @@ import re
 url = 'https://www.youtube.com/watch?v=4ivs7rZWcM8'
 interval = 20
 ssVemssList = set()
+<<<<<<< HEAD
 n = 5
 # imagePath = "./png/"
 imagePath = "/tmp/"
+=======
+n = 6
+stopNum = 0
+stopN = 100
+>>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
 needRun = True;
+imgPath = './clash/'
+imgPath = '/tmp/'
 youtubeDir = os.getcwd();
 if(needRun):
     try:
-        proxy = "127.0.0.1:7890" # IP:PORT or HOST:PORT
+        proxy = "185.51.76.129:3080" # IP:PORT or HOST:PORT
         options = Options()
         options.add_argument("--mute-audio")
+<<<<<<< HEAD
         # options.add_argument('headless')
         options.add_argument("--proxy-server=http://" + proxy)
         path = "./chromedriver"
+=======
+        options.add_argument('headless')
+#         options.add_argument("--proxy-server=socks5://" + proxy)
+        # path = "./chromedriver"
+        path = "/usr/local/bin/chromedriver"
+>>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
         driver = webdriver.Chrome(path, options=options)
         driver.get(url)
 
         timeout = 10 # seconds
         element = WebDriverWait(driver, timeout).until(lambda x: x.find_element_by_id("logo"))
-        for i in range(3):
+        for i in range(5):
             try:
                 driver.find_element_by_xpath('//*[@id="content"]/div[2]/div[5]/div[2]/ytd-button-renderer[2]').click()
             except Exception:
                 print("跳过cookie pop 窗口不存在")
-            time.sleep(10)
+            time.sleep(60)
             driver.refresh()
         element = WebDriverWait(driver, timeout).until(lambda x: x.find_element_by_id("logo"))
         print("Page is ready!")
@@ -64,16 +79,50 @@ def isTxt(name, text):
     txtFile.close()
     return result
 
-def get_ewm(img_adds):
-    img = Image.open(img_adds)
 
-    txt_list = pyzbar.decode(img)
+def get_QR_doe():
+    play = driver.find_element_by_class_name("ytp-play-button").get_attribute("aria-label")
+    try:
+        if(('pause' not in play) and ('Pause' not in play)):
+            driver.find_element_by_class_name("ytp-play-button").click()
+            time.sleep(2)
+    except Exception:
+        print("没有元素")
+    png = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
+    driver.get_screenshot_as_file(r"%s%s.png" % (imgPath, png))
+
+    get_ewm(imgPath + png + ".png")
+    print("png path= " + png)
+    t = threading.Timer(interval, get_QR_doe)
+    global stopNum
+    stopNum = stopNum + 1
+    t.start()
+    
+def get_ewm(img_adds):
+    try:
+        img = Image.open(img_adds)
+        txt_list = pyzbar.decode(img)
+        if len(txt_list) == 0:
+            driver.find_element_by_class_name("ytp-play-button").click()
+            time.sleep(2)
+    except Exception as e: 
+        print("解析图片错误 " + str(e))
+    if(stopNum>stopN):
+        exit(0)
+    
 
     for txt in txt_list:
         barcodeData = txt.data.decode("utf-8")
         barcodeData = str(barcodeData)
         if(((barcodeData.startswith("ss")) or (barcodeData.startswith("vmess")))
         and not (barcodeData.startswith("ssr"))):
+#             检测是否包含
+            if barcodeData in ssVemssList:
+                try:
+                    driver.find_element_by_class_name("ytp-play-button").click()
+                    time.sleep(2)
+                except Exception as e: 
+                    print("播放没有打开 " + e)
             ssVemssList.add(barcodeData)
             if(len(ssVemssList) >= n):
                 getClash(ssVemssList)
@@ -305,6 +354,7 @@ def getClash(nodes):
     with open(youtubeDir + "/clash/clash.yaml", 'a') as f:
         f.write(rules)
 
+<<<<<<< HEAD
 def get_QR_doe():
     play = driver.find_element_by_class_name("ytp-play-button").get_attribute("aria-label")
     try:
@@ -319,6 +369,9 @@ def get_QR_doe():
     get_ewm(imagePath + png + ".png")
     t = threading.Timer(interval, get_QR_doe)
     t.start()
+=======
+
+>>>>>>> 8883677b12b9d21e062a8d6d00024fe0b11c076f
 
 def push2gitlab():
     with open( youtubeDir + "/clash/clash.yaml", "r") as f:
