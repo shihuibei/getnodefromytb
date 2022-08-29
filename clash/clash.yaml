@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 120.233.24.162, port: 6008, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 1@1, server: 38.68.135.18, port: 4444, cipher: aes-256-gcm, type: ss, password: pKEW8JPByTVTLtM}
-  - {name: 2@2, server: 120.233.24.162, port: 6004, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 3@3, server: 120.233.24.162, port: 6009, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 4@4, server: 120.233.24.162, port: 6003, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 5@5, server: yum-y.update.mipglxi.cn, port: 6010, cipher: aes-128-gcm, type: ss, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 0@0, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: m4.40010010.xyz}}
+  - {name: 1@1, server: 213.183.59.190, port: 9053, cipher: aes-256-cfb, type: ss, password: SBM7R883jBmnqe6C}
+  - {name: 2@2, server: 213.183.59.191, port: 9042, cipher: aes-256-cfb, type: ss, password: S7KwUu7yBy58S3Ga}
+  - {name: 3@3, server: 38.68.135.18, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 4@4, server: 213.183.59.190, port: 9059, cipher: aes-256-cfb, type: ss, password: 9XwYyZsK8SNzQDtY}
+  - {name: 5@5, server: 213.183.59.190, port: 9050, cipher: aes-256-cfb, type: ss, password: FG5ddLsMPbV5CutE}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
