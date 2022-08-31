@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: aliyun.install03.vnupgcn.cn, port: 11912, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: aliyun.install03.vnupgcn.cn}}
-  - {name: 1@1, server: 185.246.155.29, port: 9050, cipher: aes-256-cfb, type: ss, password: FG5ddLsMPbV5CutE}
-  - {name: 2@2, server: 185.126.116.125, port: 9038, cipher: aes-256-cfb, type: ss, password: gYCYXfkUQEs2TaJQ}
-  - {name: 3@3, server: 185.126.116.125, port: 9001, cipher: aes-256-cfb, type: ss, password: UkXRsXvR6buDMG2Y}
-  - {name: 4@4, server: 85.208.108.93, port: 5601, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
-  - {name: 5@5, server: 185.126.116.125, port: 9000, cipher: aes-256-cfb, type: ss, password: a3GFYt36Sm82Vys9}
+  - {name: 0@0, server: 185.167.116.250, port: 9031, cipher: aes-256-cfb, type: ss, password: BwcAUZk8hUFAkDGN}
+  - {name: 1@1, server: cm2.jdweblink.club, port: 32163, type: vmess, uuid: b4c72d46-172a-316f-aabb-700205fd309b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: cm2.jdweblink.club}}
+  - {name: 2@2, server: cm1.jdweblink.club, port: 32162, type: vmess, uuid: b4c72d46-172a-316f-aabb-700205fd309b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /video, ws-headers: {Host: cm1.jdweblink.club}}
+  - {name: 3@3, server: 213.183.59.191, port: 9043, cipher: aes-256-cfb, type: ss, password: HSZuyJQcWe8dxNdF}
+  - {name: 4@4, server: 185.126.116.125, port: 9026, cipher: aes-256-cfb, type: ss, password: QWDDvVE9npNurQfA}
+  - {name: 5@5, server: 213.183.59.191, port: 9045, cipher: aes-256-cfb, type: ss, password: Lp27rqyJq72bZsqX}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
