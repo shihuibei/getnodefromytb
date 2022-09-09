@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 14.29.124.174, port: 11001, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
-  - {name: 1@1, server: 14.29.124.174, port: 11018, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
-  - {name: 2@2, server: 14.29.124.174, port: 11033, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
-  - {name: 3@3, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: ingress-i1.onebox6.org}}
-  - {name: 4@4, server: 14.29.124.174, port: 11004, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
-  - {name: 5@5, server: 138.68.151.140, port: 8080, cipher: rc4-md5, type: ss, password: 14fFPrbezE3HDZzsMOr6}
+  - {name: 0@0, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: 192.96.204.250}}
+  - {name: 1@1, server: 156.146.38.163, port: 443, cipher: aes-128-cfb, type: ss, password: shadowsocks}
+  - {name: 2@2, server: 172.105.242.17, port: 20020, cipher: aes-128-gcm, type: ss, password: 200000000000000000000020, plugin: simple-obfs, plugin-opts: {host: TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com}}
+  - {name: 3@3, server: 14.29.124.174, port: 11013, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
+  - {name: 4@4, server: 14.29.124.174, port: 11040, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
+  - {name: 5@5, server: 14.29.124.174, port: 11034, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
