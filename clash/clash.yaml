@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: 192.96.204.250}}
-  - {name: 1@1, server: 167.86.111.132, port: 443, cipher: chacha20-ietf-poly1305, type: ss, password: ofqno8iQE1oe}
-  - {name: 2@2, server: 185.126.116.125, port: 9027, cipher: aes-256-cfb, type: ss, password: EXN3S3eQpjE7EJu8}
-  - {name: 3@3, server: 79.133.109.56, port: 1036, cipher: chacha20-ietf-poly1305, type: ss, password: )1N1E6v0SU_rGTpg}
-  - {name: 4@4, server: 185.126.116.125, port: 9088, cipher: aes-256-cfb, type: ss, password: f8npKgNzdkss2ytn}
-  - {name: 5@5, server: 169.197.143.232, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 0@0, server: 212.102.53.197, port: 443, cipher: aes-128-gcm, type: ss, password: shadowsocks}
+  - {name: 1@1, server: 85.208.108.61, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 2@2, server: 62.210.113.98, port: 5001, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
+  - {name: 3@3, server: shcn2.bjyxrwlkj.com, port: 20002, type: vmess, uuid: a9289ac3-90a6-328c-b0dc-2cc73bb9d6b8, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /game, ws-headers: {Host: api.floatcloud.live}}
+  - {name: 4@4, server: 185.126.116.125, port: 9053, cipher: aes-256-cfb, type: ss, password: SBM7R883jBmnqe6C}
+  - {name: 5@5, server: 193.108.118.30, port: 5500, cipher: aes-256-gcm, type: ss, password: KixLvKzwjekG00rm}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
