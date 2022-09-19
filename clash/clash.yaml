@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 134.195.196.178, port: 804, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
-  - {name: 1@1, server: 91.206.92.176, port: 35030, cipher: chacha20-ietf-poly1305, type: ss, password: FCx0i7b33H9G}
-  - {name: 2@2, server: 172.105.242.17, port: 20020, cipher: aes-128-gcm, type: ss, password: 200000000000000000000020, plugin: simple-obfs, plugin-opts: {host: TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com}}
-  - {name: 3@3, server: 38.91.102.72, port: 7306, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
-  - {name: 4@4, server: 212.102.53.197, port: 443, cipher: aes-128-gcm, type: ss, password: shadowsocks}
-  - {name: 5@5, server: 169.197.143.232, port: 7307, cipher: aes-256-gcm, type: ss, password: FoOiGlkAA9yPEGP}
+  - {name: 0@0, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: 192.96.204.250}}
+  - {name: 1@1, server: 134.195.196.143, port: 805, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
+  - {name: 2@2, server: 38.91.102.72, port: 2376, cipher: aes-256-gcm, type: ss, password: faBAoD54k87UJG7}
+  - {name: 3@3, server: lv2sndwioabiaasw.hjspyto.cn, port: 43381, type: vmess, uuid: 26e219f2-5c2a-356c-9767-9fd681cc0134, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /tnt-dbfw, ws-headers: {Host: jpwbasdw.vzwzasc.cn}}
+  - {name: 4@4, server: 178.62.16.161, port: 811, cipher: chacha20-ietf-poly1305, type: ss, password: Ultr@r00t_2017}
+  - {name: 5@5, server: 134.195.196.178, port: 804, cipher: chacha20-ietf-poly1305, type: ss, password: G!yBwPWH3Vao}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
