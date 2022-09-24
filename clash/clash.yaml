@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 156.146.38.163, port: 443, cipher: aes-128-cfb, type: ss, password: shadowsocks}
-  - {name: 1@1, server: ca1.3320.top, port: 443, type: vmess, uuid: 0a303c5e-676e-446c-bc9b-1052b59a7499, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: ca1.3320.top}}
-  - {name: 2@2, server: 124.225.24.134, port: 7586, cipher: aes-128-gcm, type: ss, password: f964C0QL8vQTaAZU}
-  - {name: 3@3, server: 159.223.32.230, port: 8080, type: vmess, uuid: 7002330d-fe27-4b56-b22f-d7e3eb825fdb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: 159.223.32.230}}
-  - {name: 4@4, server: uk2.3320.top, port: 443, type: vmess, uuid: 6cc27d4f-074c-430d-a3a1-64724db55ab5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: uk2.3320.top}}
-  - {name: 5@5, server: 52.131.103.186, port: 7586, cipher: aes-128-gcm, type: ss, password: f964C0QL8vQTaAZU}
+  - {name: 0@0, server: 527hk1.fans8.xyz, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: 527hk1.fans8.xyz}}
+  - {name: 1@1, server: US-01.leco.ml, port: 41560, cipher: aes-256-gcm, type: ss, password: fd85e31b-0d47-418c-b641-8cc11b2e0cd}
+  - {name: 2@2, server: 14.29.124.174, port: 11048, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
+  - {name: 3@3, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: 192.96.204.250}}
+  - {name: 4@4, server: 34.220.146.25, port: 443, cipher: aes-256-cfb, type: ss, password: amazonskr05}
+  - {name: 5@5, server: lv2sndwioabiaasw.hjspyto.cn, port: 43381, type: vmess, uuid: 26e219f2-5c2a-356c-9767-9fd681cc0134, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /tnt-dbfw, ws-headers: {Host: jpwbasdw.vzwzasc.cn}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
