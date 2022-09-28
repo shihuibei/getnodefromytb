@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 60001, cipher: aes-256-gcm, type: ss, password: 61e2d024-31ac-4c8a-8ca8-6ea85ae7941}
-  - {name: 1@1, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 10005, cipher: aes-256-gcm, type: ss, password: 61e2d024-31ac-4c8a-8ca8-6ea85ae7941}
-  - {name: 2@2, server: 14.29.124.174, port: 11044, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
-  - {name: 3@3, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 10002, cipher: aes-256-gcm, type: ss, password: 61e2d024-31ac-4c8a-8ca8-6ea85ae7941}
-  - {name: 4@4, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 10003, cipher: aes-256-gcm, type: ss, password: 61e2d024-31ac-4c8a-8ca8-6ea85ae7941}
-  - {name: 5@5, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: 192.96.204.250}}
+  - {name: 0@0, server: 169.197.141.14, port: 8888, cipher: aes-256-gcm, type: ss, password: Y6R9pAtvxxzmGC}
+  - {name: 1@1, server: 527hk1.fans8.xyz, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: 527hk1.fans8.xyz}}
+  - {name: 2@2, server: sg-01.leco.ml, port: 56132, cipher: aes-256-gcm, type: ss, password: deefe17d-fcb3-4602-a889-bbb5894a977f}
+  - {name: 3@3, server: 14.29.124.174, port: 11048, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
+  - {name: 4@4, server: 169.197.141.14, port: 7002, cipher: aes-256-gcm, type: ss, password: RexnBgU7EV5ADxG}
+  - {name: 5@5, server: 169.197.141.14, port: 9101, cipher: aes-256-gcm, type: ss, password: e4FCWrgpkji3QY}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
