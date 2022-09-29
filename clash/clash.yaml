@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: riop.miaoge110.cf, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: riop.miaoge110.cf}}
-  - {name: 1@1, server: lio.miaoge.gay, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: lio.miaoge.gay}}
-  - {name: 2@2, server: 527hk1.fans8.xyz, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: 527hk1.fans8.xyz}}
-  - {name: 3@3, server: xiao.miaoge.gay, port: 443, type: vmess, uuid: 4893ed3e-8a5f-48dc-aa1e-bbc2e67a065b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xiao.miaoge.gay}}
-  - {name: 4@4, server: 14.29.124.174, port: 11009, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
-  - {name: 5@5, server: lv2sndwioabiaasw.hjspyto.cn, port: 43381, type: vmess, uuid: 26e219f2-5c2a-356c-9767-9fd681cc0134, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /tnt-dbfw, ws-headers: {Host: jpwbasdw.vzwzasc.cn}}
+  - {name: 0@0, server: v38.idcloudhost.de, port: 80, type: vmess, uuid: cb4a24b2-52ea-4411-8104-e145f3144b9e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: v38.idcloudhost.de}}
+  - {name: 1@1, server: 14.29.124.174, port: 11007, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
+  - {name: 2@2, server: jp.securevpn.cc, port: 20020, cipher: aes-128-gcm, type: ss, password: 200000000000000000000020, plugin: simple-obfs, plugin-opts: {host: TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com}}
+  - {name: 3@3, server: kr.idcloudhost.de, port: 80, type: vmess, uuid: cb4a24b2-52ea-4411-8104-e145f3144b9e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: kr.idcloudhost.de}}
+  - {name: 4@4, server: 103.186.148.94, port: 80, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /shopvpn.net, ws-headers: {Host: 103.186.148.94}}
+  - {name: 5@5, server: 51.81.223.15, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 51.81.223.15}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
