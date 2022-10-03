@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 52.81.162.162, port: 18952, cipher: aes-256-gcm, type: ss, password: c9e5db7a-f04a-467d-874c-7002449b3ca4}
-  - {name: 1@1, server: 185.167.116.250, port: 9073, cipher: aes-256-cfb, type: ss, password: daFYagqDdBdA6VTX}
-  - {name: 2@2, server: 213.183.59.218, port: 9018, cipher: aes-256-cfb, type: ss, password: fG2artUmHfNT2cX7}
-  - {name: 3@3, server: 185.167.116.250, port: 9050, cipher: aes-256-cfb, type: ss, password: FG5ddLsMPbV5CutE}
-  - {name: 4@4, server: 185.126.116.125, port: 9025, cipher: aes-256-cfb, type: ss, password: XPtzA9sCug3SPR4c}
-  - {name: 5@5, server: iepl10.dcnode.me, port: 10050, cipher: aes-128-gcm, type: ss, password: 2daf156a-b9ee-4671-913a-4339ddd39021}
+  - {name: 0@0, server: us03.internetsmartrouting.top, port: 22580, type: vmess, uuid: a4e5aa6a-a47b-4902-8ddb-711b768521a4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, ws-headers: {Host: apple.com}}
+  - {name: 1@1, server: 213.183.59.218, port: 9001, cipher: aes-256-cfb, type: ss, password: UkXRsXvR6buDMG2Y}
+  - {name: 2@2, server: 14.29.124.174, port: 11007, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
+  - {name: 3@3, server: 14.29.124.174, port: 11049, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
+  - {name: 4@4, server: 14.29.124.174, port: 11050, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
+  - {name: 5@5, server: 169.197.141.14, port: 7001, cipher: aes-256-gcm, type: ss, password: RexnBgU7EV5ADxG}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
