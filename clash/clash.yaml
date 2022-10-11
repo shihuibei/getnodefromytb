@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 14.29.124.174, port: 11015, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
-  - {name: 1@1, server: 14.29.124.174, port: 11003, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
-  - {name: 2@2, server: 103.172.116.5, port: 9005, cipher: aes-256-cfb, type: ss, password: ZET59LF6DvCC8KVt}
-  - {name: 3@3, server: 103.172.116.5, port: 9008, cipher: aes-256-cfb, type: ss, password: y9VURyNzJWNRYEGQ}
-  - {name: 4@4, server: 103.135.251.200, port: 6800, cipher: aes-256-gcm, type: ss, password: abcd1234}
-  - {name: 5@5, server: 103.172.116.5, port: 9001, cipher: aes-256-cfb, type: ss, password: UkXRsXvR6buDMG2Y}
+  - {name: 0@0, server: 116.129.254.6, port: 9027, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 116.129.254.6}}
+  - {name: 1@1, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: cbc0547f-f1e8-3f4a-ac17-fb5545079ff4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /tnt-awsxjp4, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}}
+  - {name: 2@2, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: cbc0547f-f1e8-3f4a-ac17-fb5545079ff4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /tnt-awsxjp4, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}}
+  - {name: 3@3, server: 185.112.82.136, port: 443, type: vmess, uuid: 3c9b775f-1ffc-4d71-ab46-49adc0013888, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /path/051111230910, ws-headers: {Host: 185.112.82.136}}
+  - {name: 4@4, server: 14.29.124.174, port: 11048, cipher: aes-128-cfb, type: ss, password: QazEdcTgb159@$*}
+  - {name: 5@5, server: 213.183.59.218, port: 9031, cipher: aes-256-cfb, type: ss, password: BwcAUZk8hUFAkDGN}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
