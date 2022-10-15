@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: oranme185hk152.knctrip.com, port: 443, type: vmess, uuid: 9ee1f545-c633-40ac-825e-2785efa5622b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /knctrip, ws-headers: {Host: oranme185hk152.knctrip.com}}
-  - {name: 1@1, server: 173.82.107.40, port: 25131, type: vmess, uuid: 26b83a42-2138-452a-dd2b-42d40849bc5e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 173.82.107.40}}
-  - {name: 2@2, server: www.lanzou.com.lanzoujj.xyz, port: 12728, cipher: aes-128-gcm, type: ss, password: haMLMXirByn6rGVh, plugin: simple-obfs, plugin-opts: {host: 100b9d913727.microsoft.com}}
-  - {name: 3@3, server: 01.beijing.cu.cn.ddnsdomain.ml, port: 50051, cipher: chacha20-ietf-poly1305, type: ss, password: eb432f8d-2930-4f88-9c79-408550d254ad}
-  - {name: 4@4, server: 01.beijing.cu.cn.ddnsdomain.ml, port: 50055, cipher: chacha20-ietf-poly1305, type: ss, password: eb432f8d-2930-4f88-9c79-408550d254ad}
-  - {name: 5@5, server: 01.beijing.cu.cn.ddnsdomain.ml, port: 50019, cipher: chacha20-ietf-poly1305, type: ss, password: eb432f8d-2930-4f88-9c79-408550d254ad}
+  - {name: 0@0, server: 172.64.155.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg3.zhujicn2.com}}
+  - {name: 1@1, server: 221.131.165.72, port: 11917, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 221.131.165.72}}
+  - {name: 2@2, server: jh193ru173.knctrip.com, port: 443, type: vmess, uuid: abd9668e-7ade-437a-b0c7-9e7447031684, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /knctrip, ws-headers: {Host: jh193ru173.knctrip.com}}
+  - {name: 3@3, server: buyvm107lu115cdn.knctrip.com, port: 443, type: vmess, uuid: abd9668e-7ade-437a-b0c7-9e7447031684, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /knctrip, ws-headers: {Host: buyvm107lu115cdn.knctrip.com}}
+  - {name: 4@4, server: ccs199la249.knctrip.com, port: 443, type: vmess, uuid: abd9668e-7ade-437a-b0c7-9e7447031684, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /knctrip, ws-headers: {Host: ccs199la249.knctrip.com}}
+  - {name: 5@5, server: 172.64.155.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg4.zhujicn2.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
