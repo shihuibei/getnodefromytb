@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 120.226.189.121, port: 26021, type: vmess, uuid: 969a2445-04d8-3f35-abe0-15fd31e05585, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 120.226.189.121}}
-  - {name: 1@1, server: fn600mlines021.fnline.info, port: 443, cipher: chacha20-ietf-poly1305, type: ss, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.fnline.info, tls: true, skip-cert-verify: true, mux: true}}
-  - {name: 2@2, server: unicomus.mipglxi.cn, port: 5629, cipher: aes-128-gcm, type: ss, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: 3@3, server: jp2js1.bafang.vip, port: 10025, type: vmess, uuid: 88217f59-d96e-478a-82c9-42c42c272be0, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /cctv13/hd.m3u8, ws-headers: {Host: jp2js1.bafang.vip}}
-  - {name: 4@4, server: 34.92.69.118, port: 56819, type: vmess, uuid: cff8190d-352c-4eb7-dfb5-e9fcf2feb40e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: dm.toutiao.com}}
-  - {name: 5@5, server: 13.229.112.195, port: 443, type: vmess, uuid: e13a9c42-54d6-4fe1-9578-0ca3bfc17122, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 13.229.112.195}}
+  - {name: 0@0, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /guolicheng/hinet, ws-headers: {Host: i0.hdslb.com}}
+  - {name: 1@1, server: 141.101.115.200, port: 443, type: vmess, uuid: fb5bbc8c-f6ec-4629-8c9e-23f02781a20d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: fr1.cfcdn1.xyz}}
+  - {name: 2@2, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /guolicheng/us2, ws-headers: {Host: i0.hdslb.com}}
+  - {name: 3@3, server: 141.101.115.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}}
+  - {name: 4@4, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /guolicheng/hinet, ws-headers: {Host: i0.hdslb.com}}
+  - {name: 5@5, server: 120.195.181.81, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /guolicheng/us2, ws-headers: {Host: i0.hdslb.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
