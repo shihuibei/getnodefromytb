@@ -6,11 +6,11 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 0@0, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}}
-  - {name: 1@1, server: xrayr1.277428.xyz, port: 12790, type: vmess, uuid: d606b881-2b4d-4cae-f0be-6c6249b81355, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: xrayr1.277428.xyz}}
-  - {name: 2@2, server: cn05.mynode.me, port: 8122, cipher: rc4-md5, type: ss, password: passwd, plugin: simple-obfs, plugin-opts: {host: 24086-Mzxmdl923610.download.microsoft.com}}
-  - {name: 3@3, server: 46.29.161.160, port: 23453, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 46.29.161.160}}
-  - {name: 4@4, server: 198.41.212.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash6.ssr-free.xyz}}
-  - {name: 5@5, server: 198.41.212.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash6.ssr-free.xyz}}
+  - {name: 1@1, server: 111.6.86.74, port: 9094, type: vmess, uuid: dbb925ce-a154-3282-bf0e-4e9db5eafabe, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /game, ws-headers: {Host: www.bing.com}}
+  - {name: 2@2, server: hz.jdzy.tk, port: 45785, type: vmess, uuid: 0609ffed-4b9f-416f-9d25-890ad7496bb6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: hz.jdzy.tk}}
+  - {name: 3@3, server: hz.jdzy.tk, port: 45375, cipher: chacha20-ietf-poly1305, type: ss, password: 0609ffed-4b9f-416f-9d25-890ad7496bb6}
+  - {name: 4@4, server: cn11.mynode.me, port: 8401, cipher: rc4-md5, type: ss, password: passwd, plugin: simple-obfs, plugin-opts: {host: 24086-Mzxmdl923610.download.microsoft.com}}
+  - {name: 5@5, server: 103.137.23.194, port: 443, cipher: chacha20-ietf-poly1305, type: ss, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, tls: true, skip-cert-verify: true, mux: true}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
