@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}}
-  - {name: 1@1, server: 111.6.86.74, port: 9094, type: vmess, uuid: dbb925ce-a154-3282-bf0e-4e9db5eafabe, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /game, ws-headers: {Host: www.bing.com}}
-  - {name: 2@2, server: hz.jdzy.tk, port: 45785, type: vmess, uuid: 0609ffed-4b9f-416f-9d25-890ad7496bb6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: hz.jdzy.tk}}
-  - {name: 3@3, server: hz.jdzy.tk, port: 45375, cipher: chacha20-ietf-poly1305, type: ss, password: 0609ffed-4b9f-416f-9d25-890ad7496bb6}
-  - {name: 4@4, server: cn11.mynode.me, port: 8401, cipher: rc4-md5, type: ss, password: passwd, plugin: simple-obfs, plugin-opts: {host: 24086-Mzxmdl923610.download.microsoft.com}}
-  - {name: 5@5, server: 103.137.23.194, port: 443, cipher: chacha20-ietf-poly1305, type: ss, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, tls: true, skip-cert-verify: true, mux: true}}
+  - {name: 0@0, server: fn600mliness017.fnline.xyz, port: 443, cipher: chacha20-ietf-poly1305, type: ss, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, tls: true, skip-cert-verify: true, mux: true}}
+  - {name: 1@1, server: 141.101.114.120, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.cfcdn3.xyz}}
+  - {name: 2@2, server: idnusa2.vpn-akcelluler.my.id, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}}
+  - {name: 3@3, server: 172.99.190.87, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
+  - {name: 4@4, server: 172.64.153.102, port: 443, type: vmess, uuid: bed3d876-2d26-4d4d-b789-3063438ee774, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash2.trump2023.us}}
+  - {name: 5@5, server: 141.101.115.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
