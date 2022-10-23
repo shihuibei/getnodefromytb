@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: fn600mliness017.fnline.xyz, port: 443, cipher: chacha20-ietf-poly1305, type: ss, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, tls: true, skip-cert-verify: true, mux: true}}
-  - {name: 1@1, server: 141.101.114.120, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.cfcdn3.xyz}}
-  - {name: 2@2, server: idnusa2.vpn-akcelluler.my.id, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}}
-  - {name: 3@3, server: 172.99.190.87, port: 8090, cipher: aes-256-gcm, type: ss, password: PCnnH6SQSnfoS27}
-  - {name: 4@4, server: 172.64.153.102, port: 443, type: vmess, uuid: bed3d876-2d26-4d4d-b789-3063438ee774, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash2.trump2023.us}}
-  - {name: 5@5, server: 141.101.115.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}}
+  - {name: 0@0, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13056, type: vmess, uuid: 17d50188-d0a3-3cdb-9d1f-27533f3f26c6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}}
+  - {name: 1@1, server: bb29cs.cdn.node.a.ddns-ounk.com, port: 13659, type: vmess, uuid: 17d50188-d0a3-3cdb-9d1f-27533f3f26c6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, ws-headers: {Host: bb29cs.cdn.node.a.ddns-ounk.com}}
+  - {name: 2@2, server: z5sa6is.cdn.node.a.ddns-ounk.com, port: 13685, type: vmess, uuid: 17d50188-d0a3-3cdb-9d1f-27533f3f26c6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: z5sa6is.cdn.node.a.ddns-ounk.com}}
+  - {name: 3@3, server: z5sa6is.cdn.node.a.ddns-ounk.com, port: 13537, type: vmess, uuid: 17d50188-d0a3-3cdb-9d1f-27533f3f26c6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /6d22-4232-9e87-9670c18b4a60.v1..live04.m3u8, ws-headers: {Host: z5sa6is.cdn.node.a.ddns-ounk.com}}
+  - {name: 4@4, server: dr64.cdn.node.a.ddns-ounk.com, port: 13658, type: vmess, uuid: 17d50188-d0a3-3cdb-9d1f-27533f3f26c6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /4900-495a-aa20-da0626e0e87d.v2..live03.m3u8, ws-headers: {Host: dr64.cdn.node.a.ddns-ounk.com}}
+  - {name: 5@5, server: fn600mliness017.fnline.xyz, port: 443, cipher: chacha20-ietf-poly1305, type: ss, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, tls: true, skip-cert-verify: true, mux: true}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
