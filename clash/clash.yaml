@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: cn04.mynode.me, port: 8117, cipher: rc4-md5, type: ss, password: passwd, plugin: simple-obfs, plugin-opts: {host: 24086-Mzxmdl923610.download.microsoft.com}}
-  - {name: 1@1, server: zh01lv3uk03.feiguayun.xyz, port: 50011, cipher: aes-256-gcm, type: ss, password: f453f122-4c14-423f-b55b-86f10f040505}
-  - {name: 2@2, server: zh01lv3uk03.feiguayun.xyz, port: 50011, cipher: aes-256-gcm, type: ss, password: f453f122-4c14-423f-b55b-86f10f040505}
-  - {name: 3@3, server: zh01lv3tw02.feiguayun.xyz, port: 50321, cipher: aes-256-gcm, type: ss, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
-  - {name: 4@4, server: zh01lv3hk03.feiguayun.xyz, port: 50311, cipher: aes-256-gcm, type: ss, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
-  - {name: 5@5, server: zh01lv3tw03.feiguayun.xyz, port: 50321, cipher: aes-256-gcm, type: ss, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
+  - {name: 0@0, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /chat, ws-headers: {Host: vde2.0bad.com}}
+  - {name: 1@1, server: hinet.jumaonet.com, port: 23621, type: vmess, uuid: 94673e19-11fa-4370-8583-989e9eb1a710, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /images, ws-headers: {Host: shoutingtoutiao3.10010.com}}
+  - {name: 2@2, server: pf.napsternetv.com, port: 40046, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: pf.napsternetv.com}}
+  - {name: 3@3, server: www.lanzou.com.lanzoujj.xyz, port: 13107, cipher: aes-128-gcm, type: ss, password: haMLMXirByn6rGVh, plugin: simple-obfs, plugin-opts: {host: b7fb89103ab1.microsoft.com}}
+  - {name: 4@4, server: 139.162.84.30, port: 20020, cipher: aes-128-gcm, type: ss, password: 202022100000000000000020, plugin: simple-obfs, plugin-opts: {host: securevpn.cc}}
+  - {name: 5@5, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /home, ws-headers: {Host: ca.0112233.xyz}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
