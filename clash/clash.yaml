@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}}
-  - {name: 1@1, server: apollo.cn.v4.hdsky.org, port: 28178, cipher: chacha20-ietf-poly1305, type: ss, password: de00f033-0c57-4827-aea3-9393c388a40a}
-  - {name: 2@2, server: apollo.cn.v4.hdsky.org, port: 13921, cipher: chacha20-ietf-poly1305, type: ss, password: de00f033-0c57-4827-aea3-9393c388a40a}
-  - {name: 3@3, server: xg2.xbywwcp.us, port: 65503, type: vmess, uuid: d92b67dc-8ed2-38ed-8ac8-df695846c601, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /by.xbygood.xyz, ws-headers: {Host: xg2.xbywwcp.us}}
-  - {name: 4@4, server: mg1.xbywwcp.us, port: 25365, type: vmess, uuid: d92b67dc-8ed2-38ed-8ac8-df695846c601, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /by.xbygood.xyz, ws-headers: {Host: mg1.xbywwcp.us}}
-  - {name: 5@5, server: xg1.xbywwcp.us, port: 65525, type: vmess, uuid: d92b67dc-8ed2-38ed-8ac8-df695846c601, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /by.xbygood.xyz, ws-headers: {Host: a.189.cn}}
+  - {name: 0@0, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /guolicheng/us3, ws-headers: {Host: www.189.cn}}
+  - {name: 1@1, server: pf.napsternetv.com, port: 34141, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: pf.napsternetv.com}}
+  - {name: 2@2, server: wumaojichang.tk, port: 2086, type: vmess, uuid: 2deba385-c19c-4f77-958e-dde0bcdddff5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /@heinuhome, ws-headers: {Host: heinuhome-awsus.heinu.cf}}
+  - {name: 3@3, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /guolicheng/us2, ws-headers: {Host: www.189.cn}}
+  - {name: 4@4, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /guolicheng/us1, ws-headers: {Host: www.189.cn}}
+  - {name: 5@5, server: idnusa2.vpn-akcelluler.my.id, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v2ray, ws-headers: {Host: idnusa2.vpn-akcelluler.my.id}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
