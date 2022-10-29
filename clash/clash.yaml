@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 141.101.115.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: fr2.cfcdn4.xyz}}
-  - {name: 1@1, server: 172.64.148.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: fr2.cfcdn4.xyz}}
-  - {name: 2@2, server: qiqis.cf, port: 443, type: vmess, uuid: 4e6d153c-e5b2-4911-bc72-e11c64f3ce93, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /b356a4/, ws-headers: {Host: 1dcelis.qiqis.ml}}
-  - {name: 3@3, server: 141.101.115.133, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: lg1.cfcdn1.xyz}}
-  - {name: 4@4, server: www.xt000.xyz, port: 443, type: vmess, uuid: 80782eff-e3fe-fc69-37cd-7efd760adf91, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /gceevws, ws-headers: {Host: www.xt000.xyz}}
-  - {name: 5@5, server: london1.na.invari.na.oonvari.com, port: 443, type: vmess, uuid: 3f3c52f5-0e50-4fcf-8ee2-c8b7e0c8abab, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /aaf44db73dfc/, ws-headers: {Host: london1.na.invari.na.oonvari.com}}
+  - {name: 0@0, server: 64.225.91.66, port: 20020, cipher: aes-128-gcm, type: ss, password: 202022100000000000000020, plugin: simple-obfs, plugin-opts: {host: securevpn.cc}}
+  - {name: 1@1, server: 81.28.12.12, port: 443, type: vmess, uuid: 272e1117-bcf6-489b-ab55-f7fc4ce31eca, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /temp, ws-headers: {Host: v2.zhijun.ml}}
+  - {name: 2@2, server: zxkbwgd2oy.bilibilii.live, port: 13004, cipher: aes-128-gcm, type: ss, password: haMLMXirByn6rGVh, plugin: simple-obfs, plugin-opts: {host: 6b78a186d6c9.microsoft.com}}
+  - {name: 3@3, server: 111.45.22.136, port: 11907, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: tcp, ws-path: , ws-headers: {Host: 111.45.22.136}}
+  - {name: 4@4, server: 172.64.156.100, port: 8443, type: vmess, uuid: 3cf2b27d-6e54-4c70-ead1-877b92359e08, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: sg.mochen1314.ga}}
+  - {name: 5@5, server: 128.199.109.233, port: 80, type: vmess, uuid: af92e301-273c-4dab-bb38-995ba630ec67, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 128.199.109.233}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
