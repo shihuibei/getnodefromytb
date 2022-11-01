@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: www.lanzou.com.lanzoujj.xyz, port: 13117, cipher: aes-128-gcm, type: ss, password: haMLMXirByn6rGVh, plugin: simple-obfs, plugin-opts: {host: 6b78a186d6c9.microsoft.com}}
-  - {name: 1@1, server: 104.17.146.10, port: 80, type: vmess, uuid: 71ca7f2b-413d-49a7-92e7-6733f145081e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /5nXG6yC4/, ws-headers: {Host: uk1.cachexy.ga}}
-  - {name: 2@2, server: 47.254.155.106, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}}
-  - {name: 3@3, server: 198.244.148.214, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}}
-  - {name: 4@4, server: v.tggroupv2ray233.tk, port: 443, type: vmess, uuid: 5f79f3f4-6c00-4da7-98d0-743d5d7515e7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: v.tggroupv2ray233.tk}}
-  - {name: 5@5, server: 172.64.154.201, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}}
+  - {name: 0@0, server: 141.101.114.120, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}}
+  - {name: 1@1, server: 167.88.61.119, port: 8009, cipher: aes-256-gcm, type: ss, password: XKFKl2rULjIp74}
+  - {name: 2@2, server: univstar1.198.244.148.214.sslip.io, port: 443, type: vmess, uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /wmzmvws, ws-headers: {Host: goodfamily19.site}}
+  - {name: 3@3, server: 198.41.212.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash6.ssr-free.xyz}}
+  - {name: 4@4, server: 47.89.189.70, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}}
+  - {name: 5@5, server: 172.64.154.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash6.ssr-free.xyz}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
