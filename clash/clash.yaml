@@ -5,11 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 134.195.198.106, port: 8009, cipher: aes-256-gcm, type: ss, password: XKFKl2rULjIp74}
-  - {name: 1@1, server: www.lanzou.com.lanzoujj.xyz, port: 12005, cipher: aes-128-gcm, type: ss, password: haMLMXirByn6rGVh, plugin: simple-obfs, plugin-opts: {host: 0e312026333e.microsoft.com}}
-  - {name: 2@2, server: 104.17.146.10, port: 80, type: vmess, uuid: 1e7ab649-4988-4b7d-bb2c-bc18ec1a9e3a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /wgnsldjfknzj, ws-headers: {Host: us1.cachexy.ga}}
-  - {name: 3@3, server: xiexi.tk, port: 2096, type: vmess, uuid: 37551ca0-8cc3-432f-ca1f-82aba1db3ef9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xiexi.tk}}
-  - {name: 4@4, server: xiexi.tk, port: 2096, type: vmess, uuid: 37551ca0-8cc3-432f-ca1f-82aba1db3ef9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: xiexi.tk}}
+  - {name: 0@0, server: fly2.fastestcloud.xyz, port: 40005, type: vmess, uuid: 19a2259e-bb05-4ad6-9946-9f44bf3bb827, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: fly2.fastestcloud.xyz}}
+  - {name: 1@1, server: 104.17.146.10, port: 80, type: vmess, uuid: 1e7ab649-4988-4b7d-bb2c-bc18ec1a9e3a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /wgnsldjfknzj, ws-headers: {Host: us1.cachexy.ga}}
+  - {name: 2@2, server: univstar.188.166.186.249.sslip.io, port: 443, type: vmess, uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /wmzmvws, ws-headers: {Host: goodfamily19.site}}
+  - {name: 3@3, server: fly1.fastestcloud.xyz, port: 30015, type: vmess, uuid: 848c8626-eaa2-4de9-ab8d-b707f87952d6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: fly1.fastestcloud.xyz}}
+  - {name: 4@4, server: cu.kapoknode.com, port: 25895, type: vmess, uuid: 3d216d64-9742-4d33-b195-8d4a34b25153, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}}
   - {name: 5@5, server: 8.219.83.117, port: 443, type: vmess, uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /wmzmvws, ws-headers: {Host: goodfamily19.site}}
 proxy-groups:
   - name: 🔰 节点选择
