@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: a018ce51-4b5a-4d6e-9af8-d7cd34e2e194, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}}
-  - {name: 1@1, server: 27.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 27.72img.xyz}}
-  - {name: 2@2, server: cu.kapoknode.com, port: 25895, type: vmess, uuid: e8e92b00-9702-4caa-b336-0b73e53a5faf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}}
-  - {name: 3@3, server: cm.kapoknode.com, port: 25883, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cm.kapoknode.com}}
-  - {name: 4@4, server: cu.kapoknode.com, port: 25894, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}}
-  - {name: 5@5, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}}
+  - {name: 0@0, server: jp4.mayaa.cf, port: 443, type: vmess, uuid: 1d3d73f3-243c-4b48-b0b9-b699314a590c, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dsadvcxvcx, ws-headers: {Host: jp4.mayaa.cf}}
+  - {name: 1@1, server: 172.64.154.222, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: lg1.cfcdn1.xyz}}
+  - {name: 2@2, server: 141.101.115.133, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ray, ws-headers: {Host: lg1.cfcdn1.xyz}}
+  - {name: 3@3, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /chat, ws-headers: {Host: vjp3.0bad.com}}
+  - {name: 4@4, server: 54.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 54.72img.xyz}}
+  - {name: 5@5, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /chat, ws-headers: {Host: vus2.0bad.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
