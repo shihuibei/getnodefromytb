@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: 7ufo9x9pcm.kuaiisou.xyz, port: 12602, cipher: aes-128-gcm, type: ss, password: haMLMXirByn6rGVh, plugin: simple-obfs, plugin-opts: {host: 10c14a1f6e58.microsoft.com}}
-  - {name: 1@1, server: 165.154.253.194, port: 443, type: vmess, uuid: a5f37e9f-f856-4d61-a8e0-0bbb09d25e8f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 165.154.253.194}}
-  - {name: 2@2, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}}
-  - {name: 3@3, server: 8.218.83.148, port: 63239, type: vmess, uuid: bc035c93-4a47-4f06-8833-fadc03527539, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: http, ws-path: /, ws-headers: {Host: 8.218.83.148}}
-  - {name: 4@4, server: 8.210.34.212, port: 51578, type: vmess, uuid: 24cfd28c-a3d7-4028-89e8-b25fdcb28bac, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: http, ws-path: /, ws-headers: {Host: 8.210.34.212}}
-  - {name: 5@5, server: mgny1.xbywwcp.us, port: 80, type: vmess, uuid: 00b0ad68-c6b6-3144-880d-63ffc388f739, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /by.xbygood.xyz, ws-headers: {Host: a.189.cn}}
+  - {name: 0@0, server: gz.daxun.cyo, port: 20631, type: vmess, uuid: 7e4cce7c-15b4-4436-9b75-28f483d63161, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /schinet01, ws-headers: {Host: www.baidu.com}}
+  - {name: 1@1, server: cu.kapoknode.com, port: 25882, type: vmess, uuid: 864c6abd-63b6-4d31-bed5-cf15b2a8ddbd, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}}
+  - {name: 2@2, server: gz.daxun.cyo, port: 20631, type: vmess, uuid: 7e4cce7c-15b4-4436-9b75-28f483d63161, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /scloudhinet02, ws-headers: {Host: www.baidu.com}}
+  - {name: 3@3, server: fly2.fastestcloud.xyz, port: 30005, type: vmess, uuid: 17a4e95b-c7df-4294-b5f3-0e8902c66aac, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /fly, ws-headers: {Host: fly2.fastestcloud.xyz}}
+  - {name: 4@4, server: zxkbwgd2oy.bilibilii.live, port: 13107, cipher: aes-128-gcm, type: ss, password: haMLMXirByn6rGVh, plugin: simple-obfs, plugin-opts: {host: 10c14a1f6e58.microsoft.com}}
+  - {name: 5@5, server: 54.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 54.72img.xyz}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
