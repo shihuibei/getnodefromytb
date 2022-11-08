@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0@0, server: gz.daxun.cyo, port: 20631, type: vmess, uuid: 7e4cce7c-15b4-4436-9b75-28f483d63161, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /schinet01, ws-headers: {Host: www.baidu.com}}
-  - {name: 1@1, server: cu.kapoknode.com, port: 25882, type: vmess, uuid: 864c6abd-63b6-4d31-bed5-cf15b2a8ddbd, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}}
-  - {name: 2@2, server: gz.daxun.cyo, port: 20631, type: vmess, uuid: 7e4cce7c-15b4-4436-9b75-28f483d63161, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /scloudhinet02, ws-headers: {Host: www.baidu.com}}
-  - {name: 3@3, server: fly2.fastestcloud.xyz, port: 30005, type: vmess, uuid: 17a4e95b-c7df-4294-b5f3-0e8902c66aac, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /fly, ws-headers: {Host: fly2.fastestcloud.xyz}}
-  - {name: 4@4, server: zxkbwgd2oy.bilibilii.live, port: 13107, cipher: aes-128-gcm, type: ss, password: haMLMXirByn6rGVh, plugin: simple-obfs, plugin-opts: {host: 10c14a1f6e58.microsoft.com}}
-  - {name: 5@5, server: 54.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: 54.72img.xyz}}
+  - {name: 0@0, server: 198.41.203.3, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.cfcdn3.xyz}}
+  - {name: 1@1, server: 198.41.212.145, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg1.cfcdn3.xyz}}
+  - {name: 2@2, server: 211.177.40.235, port: 30001, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /vmess, ws-headers: {Host: p1.chigua.tk}}
+  - {name: 3@3, server: cu.kapoknode.com, port: 25895, type: vmess, uuid: 8a1eb2e6-7114-4c4a-bdac-aad8cfaddfea, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}}
+  - {name: 4@4, server: gy.linghun3.xyz, port: 40072, cipher: aes-128-gcm, type: ss, password: 350dfc4f-7f4f-486a-ab71-4cb298287a3f}
+  - {name: 5@5, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /chat, ws-headers: {Host: vde1.0bad.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
