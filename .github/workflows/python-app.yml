@@ -49,9 +49,12 @@ jobs:
           && sudo chmod +x /usr/local/bin/chromedriver \
           && chromedriver --version
     - name: 执行任务
+      env:
+        FM_PASSWORD: ${{ secrets.FM_PASSWORD }}
+        FM_USERNAME: ${{ secrets.FM_USERNAME }}
       run: |
-        python getYoutube.py
         python getGithub.py
+        python test.py
     - name: 提交更改
       run: |                 
          git config --local user.email "shizhou1174151505@gmail.com"
