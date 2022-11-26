@@ -61,7 +61,7 @@ jobs:
          git config --local user.name "PyePB2D8GcFRfS"
          git add clash/clash.yaml         
          git commit -m "更新订阅链接"
-    - name: 推送更改
-      uses:  ad-m/github-push-action@master
-      with:
-         branch: master
+    # - name: 推送更改
+    #   uses:  ad-m/github-push-action@master
+    #   with:
+    #      branch: master
